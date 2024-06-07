@@ -1,0 +1,15 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+/*Background*/
+body{
+  margin:0;
+  padding:0;
+  background-image: url('D:\Visual Studio Files\Hack-a-Sol\hack-a-sol\src\assets\hack-a-sol-Bg.gif');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
