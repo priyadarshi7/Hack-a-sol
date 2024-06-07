@@ -12,6 +12,8 @@ export default function Navbar(){
                 <li>Tracks</li>
                 <li>Contact Us</li>
             </ul>
+           
+
         </div>
     )
 }
