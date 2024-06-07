@@ -1,13 +1,14 @@
 import React from "react"
+import comingSoon from "../assets/coming-soon-ezgif.com-crop.gif"
 
 export default function MainText(){
     return (
-        <div className="cs">
-            <div className="cont">
+        <div className="container">
+            <div className="text-content">
                 <h1>HACK-A-SOL</h1>
-                <img src=".\src\assets\69e341362c338a0185f87d2ac3fd1b75.gif" className="img"></img>
-                <p>Annual Pan-India <span className="txt">Hackathon</span><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by IIIT-Naya Raipur</p>
+                <img src={comingSoon}/>
+                <h2>Annual Pan-India <span className="txt">Hackathon</span><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by IIIT-Naya Raipur</h2>
             </div>
         </div>
-    )
+           )
 }

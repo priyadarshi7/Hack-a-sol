@@ -14,6 +14,7 @@ body{
   background-attachment: fixed;
   background-position: center;
   position: relative;
+  height:100vh;
 }
 
 /*Nav-Bar*/
@@ -26,7 +27,6 @@ body{
 .navbar{
  
   display: flex;
-  position: absolute;
   width: 100%;
   height: 15vh;
   align-items: center;
@@ -61,49 +61,86 @@ body{
   cursor: pointer;
 }
 
-.cs {
+/*Main-Text*/
+.main{
+  height:100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  flex-direction: column;
 }
 
-.cont {
+.container{
+  margin:auto;
+}
+
+.text-content{
+  margin:auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.img {
-  width: 500px;
-  height: 250px;
-}
 
-.cont > h1 {
-  text-shadow: 4px 4px 5px #FFA401, 1px 1px 4px #FF6643;
-  color: rgba(255, 164, 1, 1);
-  /* display: inline; */
-  font-size: 130px;
-  height: 4rem;
+.text-content h1 {  
+  font-size: 14vh; 
   font-weight: 900;
+  font-family: Montserrat; 
+  background: linear-gradient(90deg, #FFA401 0%, #FF6643 100%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  margin-bottom: 30px;
 }
 
-.cont > p {
+.text-content img{
+  height:16vh;
+}
+
+.text-content span{
+  font-family: Montserrat; 
+  background: linear-gradient(90deg, #FFA401 0%, #FF6643 100%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
+
+.text-content h2{
   color: white;
-  font-size: 35px;
-  font-weight: 700;
-  position: relative;
-  top: 5rem;
+  font-family: Montserrat;
+  font-size: 4vh;
+  margin-top:30px;
 }
 
-.txt {
-  color: #FFA401;
-}
+/*Responsiveness*/
 
- @media (max-width: 980px){
+@media (max-width: 980px){
   .navbar-list{
     display: none;
   }
-  
+  .text-content h1{
+    font-size: 10vh;
+  }
+  .text-content img{
+    height:12vh;
+  }
+  .text-content h2{
+    font-size: 2vh;
+  }
+}
 
-} 
+@media (max-width:630px){
+  .text-content h1{
+    font-size: 6vh;
+  }
+  .text-content img{
+    height:8vh;
+  }
+}
+@media (min-height:1300px) and (max-height:1400px){
+  .text-content h1{
+    font-size: 8vh;
+  }
+  .text-content img{
+    height:6vh;
+  }
+  .text-content h2{
+    font-size: 1.8vh;
+  }
+}
