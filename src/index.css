@@ -88,6 +88,7 @@ body{
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text; 
   margin-bottom: 30px;
+  cursor:default;
 }
 
 .text-content img{
@@ -106,6 +107,7 @@ body{
   font-family: Montserrat;
   font-size: 4vh;
   margin-top:30px;
+  cursor: default;
 }
 
 /*Responsiveness*/
