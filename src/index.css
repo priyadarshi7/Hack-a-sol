@@ -147,3 +147,15 @@ body{
     font-size: 1.8vh;
   }
 }
+
+@media (max-width:380px){
+  .text-content h1{
+    font-size: 5vh;
+  }
+  .text-content img{
+    height:6vh;
+  }
+  .text-content h2{
+    font-size: 1.8vh;
+  }
+}
