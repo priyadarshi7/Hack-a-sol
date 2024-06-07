@@ -15,11 +15,12 @@ body{
   position: relative;
 }
 
-.navbar > img{
+/*Nav-Bar*/
+
+.navbar img{
   width:6vh;
   margin-left:5vh;
 }
-
 
 .navbar{
  
