@@ -48,7 +48,7 @@ body{
   margin-right:7vh;
   color: white;
   letter-spacing: 0.9px;
-
+  transition: 0.1s;
 }
 
 
