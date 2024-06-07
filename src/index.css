@@ -14,7 +14,7 @@ body{
   background-attachment: fixed;
   background-position: center;
   position: relative;
-  height:100vh;
+  height:100svh;
 }
 
 /*Nav-Bar*/
@@ -63,7 +63,7 @@ body{
 
 /*Main-Text*/
 .main{
-  height:100vh;
+  height:100svh;
   display: flex;
   flex-direction: column;
 }
