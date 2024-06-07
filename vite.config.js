@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://github.com/priyadarshi7/Hack-a-sol.git',
+  base: '/Hack-a-sol/',
   server: {
     fs: {
       allow: [
