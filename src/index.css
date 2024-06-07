@@ -85,6 +85,7 @@ body{
   font-weight: 900;
   font-family: Montserrat; 
   background: linear-gradient(90deg, #FFA401 0%, #FF6643 100%);
+  filter: drop-shadow(6px 6px 16px #cf6508);
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text; 
   margin-bottom: 30px;
