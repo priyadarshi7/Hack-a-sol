@@ -129,6 +129,11 @@ body{
   cursor: default;
 }
 
+.music-button{
+  justify-content: center;
+  align-items: center;
+}
+
 /*Responsiveness*/
 
 @media (max-width: 980px){
