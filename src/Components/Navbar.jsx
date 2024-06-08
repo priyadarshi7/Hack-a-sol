@@ -52,7 +52,8 @@ export default function Navbar(){
             <div id="ham-button">
             <IconButton onClick={toggleham}><MenuIcon color="info" sx={{fontSize:"50px" , color:"white"}}/></IconButton>
             </div>
-            <Drawer open={showham} anchor="right" onClose={toggleham}  sx={{ backgroundColor:"hsba(340, 8%, 14%, 1)"}}>
+            <Drawer open={showham} anchor="right" onClose={toggleham}  sx={{ backgroundColor:"hsba(340, 8%, 14%, 1)"}}   PaperProps={{sx: { backgroundColor: 'rgba(255, 255, 255, .10)',
+            backdropFilter: 'blur(5px)', color:'white', width:'50%'}}}>
                 {list_items}
             </Drawer>
            
