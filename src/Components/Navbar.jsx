@@ -15,8 +15,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import HeadsetIcon from '@mui/icons-material/Headset';
 import HeadsetOffIcon from '@mui/icons-material/HeadsetOff';
-import fein from '../assets/fein.mp3'
-import myeyes from '../assets/myeyes.mp3'
+
+import cindrella from '../assets/cindrella.mp3'
 import useSound from 'use-sound'
 import test from '../assets/test.mp3'
 import { PlaylistAdd } from "@mui/icons-material";
@@ -31,8 +31,7 @@ export default function Navbar(){
 
 
 
-    const [play , {stop , pause} ] = useSound(myeyes, { onend: ()=>{play()
-    }});
+    const [play , {stop , pause} ] = useSound(cindrella);
 
    
 
