@@ -132,20 +132,12 @@ body{
 /*Responsiveness*/
 
 @media (max-width: 980px){
-  .navbar-list{
-    display: none;
-  }
   #ham-button{
     display: block;
   }
-
-} 
-@media (min-width:980px){
-  
-#ham-button{
-  display: none;
-  /* width:50vh; */
-}
+  .navbar-list{
+    display: none;
+  }
   .text-content h1{
     font-size: 10vh;
   }
@@ -154,6 +146,12 @@ body{
   }
   .text-content h2{
     font-size: 2vh;
+  }
+} 
+
+@media (min-width: 980px){
+  #ham-button{
+    display: none;
   }
 }
 

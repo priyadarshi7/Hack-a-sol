@@ -27,7 +27,7 @@ export default function Navbar(){
     }
 
     const list_items = (
-        <Box sx={{width:150 }}>
+        <Box sx={{width:150}}>
             <List>
                 {["About Us" , "Sechdule", "Prizes" , "Tracks" , "Contact Us"].map((item,key)=>{
                     return <ListItem key={key}>
