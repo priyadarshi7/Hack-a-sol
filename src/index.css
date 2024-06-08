@@ -1,6 +1,7 @@
 *{
   margin:0;
   padding:0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*Background*/
@@ -13,18 +14,19 @@ body{
   background-attachment: fixed;
   background-position: center;
   position: relative;
+  height:100svh;
 }
 
-.navbar > img{
+/*Nav-Bar*/
+
+.navbar img{
   width:6vh;
   margin-left:5vh;
 }
 
-
 .navbar{
  
   display: flex;
-  position: absolute;
   width: 100%;
   height: 15vh;
   align-items: center;
@@ -48,7 +50,7 @@ body{
   margin-right:7vh;
   color: white;
   letter-spacing: 0.9px;
-
+  transition: 0.1s;
 }
 
 
@@ -59,26 +61,76 @@ body{
   cursor: pointer;
 }
 
-
-#ham-button{
-  margin-left:auto;
-  margin-right:20px;
+/*Main-Text*/
+.main{
+  height:100svh;
+  display: flex;
+  flex-direction: column;
 }
 
+.container{
+  margin:auto;
+}
 
- @media (max-width: 980px){
+.text-content{
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-content h1 {  
+  font-size: 14vh; 
+  font-weight: 900;
+  font-family: Montserrat; 
+  background: linear-gradient(90deg, #FFA401 0%, #FF6643 100%);
+  filter: drop-shadow(6px 6px 16px #cf6508);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  margin-bottom: 30px;
+  cursor:default;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
+.text-content img{
+  height:16vh;
+}
+
+.text-content span{
+  font-family: Montserrat; 
+  background: linear-gradient(90deg, #FFA401 0%, #FF6643 100%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
+
+.text-content h2{
+  color: white;
+  font-family: Montserrat;
+  font-size: 4vh;
+  margin-top:30px;
+  cursor: default;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 980px){
   .navbar-list{
     display: none;
   }
-  #ham-button{
-    display: block;
-  }
+  
 
 } 
-@media (min-width:980px){
-  
-#ham-button{
-  display: none;
-  /* width:50vh; */
-}
-}

@@ -39,7 +39,9 @@ export default function Navbar(){
     )
     return (
         <div className="navbar">
-            <img src={sac_logo}></img>
+         <a href="https://sac.iiitnr.ac.in/" className="logo">
+         <img src={sac_logo}></img>
+         </a>  
             <ul className="navbar-list">
                 <li>About Us</li>
                 <li>Schedule</li>
