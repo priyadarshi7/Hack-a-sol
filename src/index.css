@@ -49,7 +49,7 @@ body{
 .navbar img{
   width:6vh;
   margin-left:5vh;
-  animation: start-screen 4s ease 0s 1 normal forwards;
+  animation: start-screen 5s ease 0s 1 normal forwards;
 }
 
 @keyframes start-screen {
@@ -152,7 +152,7 @@ body{
 
 .text-content img{
   height:16vh;
-  animation: start-screen 4s ease 0s 1 normal forwards;
+  animation: start-screen 5s ease 0s 1 normal forwards;
 }
 
 .text-content span{
