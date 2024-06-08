@@ -9,15 +9,13 @@ export default function App(){
         setTimeout(()=>setLoading(false),4000)
     },[])
 
-    if(loading){
         return(
-            <Loading />
-        )
-    }
-        return(
+            
             <div className="main">
-            <Navbar/>
-            <MainText/>
+               {loading && <Loading loading={loading}/>}
+            {loading===false && <Navbar/>}
+            {loading===false && <MainText/>}
             </div>
+
         )
 }

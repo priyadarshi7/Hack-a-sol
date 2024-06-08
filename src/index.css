@@ -5,7 +5,7 @@
 }
 /*load-screen*/
 .load-screen{
-  height:100svh;
+  height:100vh;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@ body{
 .navbar img{
   width:6vh;
   margin-left:5vh;
-  animation: start-screen 1s ease 0s 1 normal forwards;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 @keyframes start-screen {
@@ -67,7 +67,7 @@ body{
   width: 100%;
   height: 15vh;
   align-items: center;
-  animation: start-screen 2s ease 0s 1 normal forwards;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 .navbar-list{
@@ -99,6 +99,9 @@ body{
 }
 
 /*Main-Text*/
+.MAIN{
+  height:100svh;
+}
 .main{
   height:100svh;
   display: flex;
@@ -131,7 +134,7 @@ body{
   -webkit-background-clip: text; 
   margin-bottom: 30px;
   cursor:default;
-  animation: start-screen 2s ease 0s 1 normal forwards;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnim {
@@ -149,7 +152,7 @@ body{
 
 .text-content img{
   height:16vh;
-  animation: start-screen 1s ease 0s 1 normal forwards;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 .text-content span{
@@ -165,13 +168,13 @@ body{
   font-size: 4vh;
   margin-top:30px;
   cursor: default;
-  animation: start-screen 2s ease 0s 1 normal forwards;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 .music-button{
   justify-content: center;
   align-items: center;
-  animation: start-screen 2s ease 0s 1 normal forwards;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 /*Responsiveness*/
