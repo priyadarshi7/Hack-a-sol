@@ -8,7 +8,7 @@ import Music from './Components/music.jsx'
 export default function App(){
     const [loading,setLoading]=React.useState(true);
     React.useEffect(()=>{
-        setTimeout(()=>setLoading(false),8000)
+        setTimeout(()=>setLoading(false),4000)
     },[])
 
         return(
