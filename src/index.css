@@ -3,12 +3,41 @@
   padding:0;
   font-family: 'Montserrat', sans-serif;
 }
+/*load-screen*/
+.load-screen{
+  height:100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: load-anim 2s ease 3s 1 normal forwards;
+}
+
+@keyframes load-anim {
+	0%{
+		opacity: 1;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+.load-icon{
+  background: url('./assets/load.gif');
+  background-repeat: no-repeat;
+  height:200px;
+  width:200px;
+  background-size: contain;
+}
 
 /*Background*/
+.vid{
+  position: fixed; width: 100%; height: 100%; object-fit: cover; z-index: 0;
+}
 body{
   margin:0;
   padding:0;
-  background-image: url('./assets/hack-a-sol-Bg.gif');
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,15 +51,25 @@ body{
 .navbar img{
   width:6vh;
   margin-left:5vh;
+  animation: start-screen 5s ease 0s 1 normal forwards;
+}
+
+@keyframes start-screen {
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
 }
 
 .navbar{
- 
   display: flex;
   width: 100%;
   height: 15vh;
   align-items: center;
-  
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 .navbar-list{
@@ -62,6 +101,9 @@ body{
 }
 
 /*Main-Text*/
+.MAIN{
+  height:100svh;
+}
 .main{
   height:100svh;
   display: flex;
@@ -94,7 +136,7 @@ body{
   -webkit-background-clip: text; 
   margin-bottom: 30px;
   cursor:default;
-  animation: myAnim 2s ease 0s 1 normal forwards;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnim {
@@ -112,6 +154,7 @@ body{
 
 .text-content img{
   height:16vh;
+  animation: start-screen 5s ease 0s 1 normal forwards;
 }
 
 .text-content span{
@@ -127,11 +170,13 @@ body{
   font-size: 4vh;
   margin-top:30px;
   cursor: default;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 .music-button{
   justify-content: center;
   align-items: center;
+  animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
 /*Responsiveness*/
