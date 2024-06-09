@@ -24,7 +24,7 @@ export default function CustomizedSnackbars() {
           onClose={handleClose}
           severity="success"
           variant="filled"
-          sx={{ width: '60%',backgroundColor: 'rgba(255, 255, 255, .10)',
+          sx={{ width: '80%',backgroundColor: 'rgba(255, 255, 255, .10)',
             backdropFilter: 'blur(5px)', color:'white'}}
         >
           Welcome to the Hack-A-Sol Website!!!
