@@ -14,7 +14,7 @@ export default function App(){
         return(
             
             <div className="main">
-                <video autoPlay loop className="vid"><source src={BgVideo} type="video/mp4" /> </video>
+                <video autoPlay loop muted className="vid"><source src={BgVideo} type="video/mp4" /> </video>
                {loading && <Loading loading={loading}/>}
             {loading===false && <Navbar/>}
             {loading==false && <Music/>}
