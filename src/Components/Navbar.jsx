@@ -13,27 +13,20 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 // import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import HeadsetIcon from '@mui/icons-material/Headset';
-import HeadsetOffIcon from '@mui/icons-material/HeadsetOff';
 
-import cindrella from '../assets/cindrella.mp3'
-import useSound from 'use-sound'
+
 import test from '../assets/test.mp3'
 import { PlaylistAdd } from "@mui/icons-material";
+
 
 
 export default function Navbar(){
 
 
     const [showham , setShowham] = useState(false);
-    const [music , setMusic] = useState(true);
+  
     // const [switch_mus , setSwitch] = useState(true);
 
-
-
-    const [play , {stop , pause} ] = useSound(cindrella);
-
-   
 
     function toggleham(){
         setShowham((prevstate)=>{
@@ -41,13 +34,9 @@ export default function Navbar(){
         })
     }
 
-    function togglemusic(){
-        setMusic((prevstate)=>{
-            return !prevstate
-        })
-    }
+   
 
-    music ? play() : pause();
+ 
     
 
     const list_items = (
@@ -82,9 +71,6 @@ export default function Navbar(){
             backdropFilter: 'blur(5px)', color:'white', width:'50%'}}}>
                 {list_items}
             </Drawer>
-        </div>
-        <div className="music-button">
-        <IconButton onClick={togglemusic} sx={{marginLeft:"5vh"}}>{music ? <HeadsetIcon sx={{color:"white" , fontSize:"34px"}}/> :<HeadsetOffIcon sx={{color:"white" , fontSize:"36px"}} /> }</IconButton>
         </div>
         </>
     )
