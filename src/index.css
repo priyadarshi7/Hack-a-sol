@@ -52,6 +52,8 @@ body{
   width:6vh;
   margin-left:5vh;
   animation: start-screen 5s ease 0s 1 normal forwards;
+  margin-right: auto;
+  margin-top: 1.2vh;
 }
 
 @keyframes start-screen {
@@ -173,10 +175,15 @@ body{
   animation: start-screen 4s ease 0s 1 normal forwards;
 }
 
+/*music*/
+
 .music-button{
   justify-content: center;
   align-items: center;
   animation: start-screen 4s ease 0s 1 normal forwards;
+  margin-left: auto;
+  margin-bottom:2vh;
+  margin-right: 2vh;
 }
 
 /*Responsiveness*/
@@ -190,12 +197,14 @@ body{
   }
   .text-content h1{
     font-size: 10vh;
+    margin-top: 40%;
   }
   .text-content img{
     height:12vh;
   }
   .text-content h2{
     font-size: 2vh;
+    margin-top: 30vh;
   }
 } 
 

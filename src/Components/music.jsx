@@ -9,18 +9,17 @@ import {useState} from 'react'
 
 export default function Music(){
 
+    const [music , setMusic] = useState(false);
     const [play , {stop , pause} ] = useSound(cindrella);
-    const [music , setMusic] = useState(true);
-    music ? play() : pause();
+    React.useEffect(()=>music ? play() : pause(),[music,play,pause])
     function togglemusic(){
         setMusic((prevstate)=>{
             return !prevstate
         })
     }
-
     return (
         <div className="music-button">
-        <IconButton onClick={togglemusic} sx={{marginLeft:"5vh"}}>{music ? <HeadsetIcon sx={{color:"white" , fontSize:"34px"}}/> :<HeadsetOffIcon sx={{color:"white" , fontSize:"36px"}} /> }</IconButton>
+        <IconButton onClick={togglemusic} sx={{marginLeft:"4.8vh"}}>{music ? <HeadsetIcon sx={{color:"white" , fontSize:"30px"}}/> :<HeadsetOffIcon sx={{color:"white" , fontSize:"32px"}} /> }</IconButton>
         </div>
     )
 }

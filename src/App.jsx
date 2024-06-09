@@ -15,10 +15,10 @@ export default function App(){
             
             <div className="main">
                 <video autoPlay loop muted className="vid"><source src={BgVideo} type="video/mp4" /> </video>
-               {loading && <Loading loading={loading}/>}
+            {loading && <Loading loading={loading}/>}
             {loading===false && <Navbar/>}
-            {loading==false && <Music/>}
             {loading===false && <MainText/>}
+            {loading===false && <Music/>}
             </div>
 
         )
