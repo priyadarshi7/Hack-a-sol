@@ -10,7 +10,7 @@ import {useState , useEffect} from 'react'
 export default function Music(){
 
     const [play , {stop , pause , sound} ] = useSound(cindrella);
-    const [music , setMusic] = useState(true);
+    const [music , setMusic] = useState(false);
     //play();
     
     useEffect(()=>{
