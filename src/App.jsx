@@ -2,7 +2,7 @@ import React from "react"
 import Navbar from './Components/Navbar.jsx'
 import MainText from "./Components/MainText.jsx"
 import Loading from "./Components/Loading.jsx";
-import BgVideo from "./assets/BG_video.mp4"
+import BgVideo from "./assets/BG_6mb.mp4"
 import Music from './Components/music.jsx'
 import Snackbar  from "./Components/Snackbar.jsx";
 

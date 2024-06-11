@@ -3,6 +3,51 @@
   padding:0;
   font-family: 'Montserrat', sans-serif;
 }
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+  margin-top: 6vh;
+  animation: start-screen 4s ease 0s 1 normal forwards;
+}
+
+.button1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 35vh;
+  height:6vh;
+  border-radius: 8px;
+  background: #FF2B00;
+  position: relative;
+  color: white;
+  font-weight: 900;
+}
+.button2{
+  display: flex;
+  gap: 2vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 35vh;
+  height:6vh;
+  border-radius: 8px;
+  background: #4F56FF;
+  position: relative;
+  color: white;
+  font-weight: 900;
+}
+.img-discord{
+  background-image: url('./assets/Discord_logo.png');
+  background-size: cover;
+  height: 3vh;
+  width:3vh;
+}
+
 /*load-screen*/
 .load-screen{
   height:100vh;
@@ -44,6 +89,7 @@ body{
   background-position: center;
   position: relative;
   height:100svh;
+  cursor: url('./assets/pointer.jpg'),auto;
 }
 
 /*Nav-Bar*/
@@ -118,6 +164,9 @@ body{
 }
 .container{
   margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-content{
@@ -189,6 +238,26 @@ body{
 /*Responsiveness*/
 
 @media (max-width: 980px){
+  .buttons{
+    flex-direction: column;
+  }
+  .button1{
+    font-family: Montserrat;
+    font-size: medium;
+    width:26vh;
+    height: 5vh;
+    font-weight: 700;
+    font-size: 1.8vh;
+  }
+  .button2{
+    font-family: Montserrat;
+    font-size: medium;
+    width:26vh;
+    height:5vh;
+    font-weight: 700;
+    font-size: 1.8vh;
+    gap:1vh;
+  }
   .navbar img{
     margin-top: 1.2vh;
   }
@@ -207,7 +276,7 @@ body{
   }
   .text-content h2{
     font-size: 2vh;
-    margin-top: 30vh;
+    /* margin-top: 30vh; */
   }
 } 
 
