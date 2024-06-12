@@ -18,7 +18,7 @@ export default function Music(){
     }
     return (
         <div className="music-button">
-        <IconButton onClick={togglemusic} sx={{marginLeft:"4.8vh"}}>{music ? <HeadsetIcon sx={{color:"white" , fontSize:"30px"}}/> :<HeadsetOffIcon sx={{color:"white" , fontSize:"32px"}} /> }</IconButton>
+        <IconButton onClick={togglemusic} sx={{marginLeft:"4.8vh"}}>{music ? <HeadsetIcon sx={{color:"white" , fontSize:"25px"}}/> :<HeadsetOffIcon sx={{color:"white" , fontSize:"27px"}} /> }</IconButton>
         </div>
 
     )

@@ -25,8 +25,22 @@
   position: relative;
   color: white;
   font-weight: 900;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, .10);
+  backdrop-filter: blur(5px);
+  color:white;
+  border: 2px solid white;
+}
+.button1:hover{
+  background: #fa2d04;
+  transform: scale(1.1);
+}
+.button2:hover{
+  background: #575dfa;
+  transform: scale(1.1);
 }
 .button2{
+  cursor: pointer;
   display: flex;
   gap: 2vh;
   flex-direction: row;
@@ -40,6 +54,10 @@
   position: relative;
   color: white;
   font-weight: 900;
+  background-color: rgba(255, 255, 255, .10);
+  backdrop-filter: blur(5px);
+  color:white;
+  border: 2px solid white;
 }
 .img-discord{
   background-image: url('./assets/Discord_logo.png');
@@ -55,25 +73,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: load-anim 2s ease 3s 1 normal forwards;
-}
-
-@keyframes load-anim {
-	0%{
-		opacity: 1;
-	}
-
-	100%{
-		opacity: 0;
-	}
+  animation: load-anim 5s ease 4s 1 normal forwards;
 }
 
 .load-icon{
-  background: url('./assets/load.gif');
+  background: url('./assets/Hac-a-sol_logo.png');
   background-repeat: no-repeat;
   height:200px;
   width:200px;
   background-size: contain;
+  animation: myAnim 4s ease 0s 1 normal forwards;
 }
 
 /*Background*/
@@ -95,22 +104,13 @@ body{
 /*Nav-Bar*/
 
 .navbar img{
-  width:6vh;
+  width:16vh;
   margin-left:5vh;
   animation: start-screen 5s ease 0s 1 normal forwards;
   margin-right: auto;
   margin-top: 1.2vh;
 }
 
-@keyframes start-screen {
-	0%{
-		opacity: 0;
-	}
-
-	100%{
-		opacity: 1;
-	}
-}
 
 .navbar{
   display: flex;
@@ -142,7 +142,7 @@ body{
 
 
 .navbar-list > li:hover{
-
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e62a00, 0 0 20px #e62a00, 0 0 25px #e62a00, 0 0 30px #e62a00, 0 0 35px #e62a00;
   transform: scale(1.2) ;
   transition-delay: 0.1s;
   cursor: pointer;
@@ -185,22 +185,9 @@ body{
   filter: drop-shadow(6px 6px 16px #cf6508);
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text; 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   cursor:default;
   animation: start-screen 4s ease 0s 1 normal forwards;
-}
-
-@keyframes myAnim {
-	0%,
-	50%,
-	100% {
-		opacity: 1;
-	}
-
-	25%,
-	75% {
-		opacity: 0;
-	}
 }
 
 .text-content img{
@@ -219,7 +206,7 @@ body{
   color: white;
   font-family: Montserrat;
   font-size: 4vh;
-  margin-top:30px;
+  margin-top:60px;
   cursor: default;
   animation: start-screen 4s ease 0s 1 normal forwards;
 }
@@ -233,6 +220,43 @@ body{
   margin-left: auto;
   margin-bottom:2vh;
   margin-right: 2vh;
+}
+
+/* animation-keyframes */
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+	
+    transform: scale(1);
+	}
+
+	25%,
+	75% {
+		
+    transform: scale(1.2);
+	}
+}
+
+@keyframes start-screen {
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes load-anim {
+	0%{
+		opacity: 1;
+	}
+
+	100%{
+		opacity: 0;
+	}
 }
 
 /*Responsiveness*/
@@ -259,7 +283,9 @@ body{
     gap:1vh;
   }
   .navbar img{
+    margin-left: 1vh;
     margin-top: 1.2vh;
+    width:9vh;
   }
   #ham-button{
     display: block;
@@ -323,3 +349,4 @@ body{
     font-size: 1.8vh;
   }
 }
+

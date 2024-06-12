@@ -1,5 +1,5 @@
 import React from "react"
-import sac_logo from "../assets/sac-logo.png"
+import sac_logo from "../assets/Hac-a-sol_logo.png"
 import {useState} from 'react'
 
 import Box from '@mui/material/Box';
