@@ -230,6 +230,7 @@ body{
   font-size: large;
   font-weight: 600;
   margin-top: 10vh;
+  transition: 0.1s;
 }
 
 .sponsor-container button:hover{
