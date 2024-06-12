@@ -4,6 +4,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.home{
+  height:100svh;
+}
+
 .buttons{
   display: flex;
   justify-content: center;
@@ -147,13 +151,27 @@ body{
   transition-delay: 0.1s;
   cursor: pointer;
 }
+/* Sponsor-Page */
+
+.sponsor-container{
+  background-color: black;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100svh;
+}
+
+.sponsor-container header{
+  background-image: url('./assets/Texts/Past_Sponsors.png');
+}
 
 /*Main-Text*/
 .MAIN{
   height:100svh;
 }
 .main{
-  height:100svh;
   display: flex;
   flex-direction: column;
 }
@@ -214,12 +232,16 @@ body{
 /*music*/
 
 .music-button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  bottom:0;
+  z-index: 1;
   justify-content: center;
   align-items: center;
   animation: start-screen 4s ease 0s 1 normal forwards;
   margin-left: auto;
-  margin-bottom:2vh;
-  margin-right: 2vh;
+  position:fixed;
 }
 
 /* animation-keyframes */

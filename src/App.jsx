@@ -5,6 +5,7 @@ import Loading from "./Components/Loading.jsx";
 import BgVideo from "./assets/BG_6mb.mp4"
 import Music from './Components/music.jsx'
 import Snackbar  from "./Components/Snackbar.jsx";
+import Sponsor from "./Components/Sponsor.jsx"
 
 export default function App(){
     const [loading,setLoading]=React.useState(true);
@@ -15,12 +16,15 @@ export default function App(){
         return(
             
             <div className="main">
-                <video autoPlay loop muted className="vid"><source src={BgVideo} type="video/mp4" /> </video>
+                <div className="home">
+            <video autoPlay loop muted className="vid"><source src={BgVideo} type="video/mp4" /> </video>
             {loading && <Loading loading={loading}/>}
             {loading===false && <Navbar/>}
             {loading===false && <MainText/>}
+                </div>
             {loading===false && <Music/>}
             {loading===false && <Snackbar/>}
+            {loading===false && <Sponsor />}
             </div>
 
         )
