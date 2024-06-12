@@ -28,12 +28,14 @@
   background: #FF2B00;
   position: relative;
   color: white;
+  gap: 2vh;
   font-weight: 900;
   cursor: pointer;
   background-color: rgba(255, 255, 255, .10);
   backdrop-filter: blur(5px);
   color:white;
   border: 2px solid white;
+  transition: 0.1s;
 }
 .button1:hover{
   background: #fa2d04;
@@ -62,12 +64,20 @@
   backdrop-filter: blur(5px);
   color:white;
   border: 2px solid white;
+  transition: 0.1s;
 }
 .img-discord{
   background-image: url('./assets/Discord_logo.png');
   background-size: cover;
   height: 3vh;
   width:3vh;
+}
+
+.img_registration {
+  background-image: url('./assets/Vector.png');
+  background-size: cover;
+  height: 2.5vh;
+  width: 2vh;
 }
 
 /*load-screen*/
