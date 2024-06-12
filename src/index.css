@@ -207,7 +207,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 9vh;
+  gap: 6vh;
 }
 
 .tracks_heading {
@@ -246,7 +246,10 @@ body{
   height: 13rem;
   width: 13rem;
   border-radius: 1rem;
+  transition: 1s;
+  animation: hover 2s infinite alternate;
 }
+
 
 .tracks_foot > h2 {
   font-size: 35px;
@@ -350,6 +353,8 @@ body{
 	}
 }
 
+
+
 @keyframes start-screen {
 	0%{
 		opacity: 0;
@@ -368,6 +373,18 @@ body{
 	100%{
 		opacity: 0;
 	}
+}
+
+@keyframes hover {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  50% {
+    transform: rotateX(8deg) rotateY(-7deg) rotateZ(0.5deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
 }
 
 /*Responsiveness*/
