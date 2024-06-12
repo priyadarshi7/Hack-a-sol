@@ -167,41 +167,96 @@ body{
 
 .sponsor-container{
   background-color: black;
+  justify-content: center;
   position:relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height:100svh;
+  color: white;
 }
-
-/* .sponsor-heading{
-  width:80%;
-  height:16vh;
+.head-2{
+  margin: auto;
+  font-size: 3vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.head-2 h2{
+  font-weight:200;
+}
+.sponsor-container span{
+  color: #FFA401;
+}
+ .sponsor-heading{
+  margin-top: 4vh;
   background-image: url('./assets/Texts/sponsor.png');
-  border-left: 2vh;
-  background-repeat: no-repeat;
+  background-position:top;
   background-size: contain;
-}
-
-.sponsor-heading h2{
+  background-repeat: no-repeat;
+  width:80%;
+  height: 17vh;
   display: flex;
   justify-content: center;
-  align-items:center;
-  height:100%;
-  font-size: 100px;
-  font-weight: 900;
+  align-items: flex-end;
+  flex-direction: column;
+  border:0;
+  padding: 0;
+ }
+
+.sponsor-heading h2{
   background: linear-gradient(91.98deg, #FF6445 59.07%, #FFA400 97.21%);
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text; 
   margin-bottom: 20px;
-  z-index: 1;
-} */
+  margin: auto;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.sponsor-container button{
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, .10);
+  backdrop-filter: blur(5px);
+  width:60%;
+  border-radius: 6px;
+  border:2px solid white;
+  color:white;
+  height:6vh;
+  width:55vh;
+  font-size: large;
+  font-weight: 600;
+  margin-top: 10vh;
+}
+
+.sponsor-container button:hover{
+    background: #fa2d04;
+    transform: scale(1.1);
+}
+
+/* Carousel */
+.image_wrapper {
+  margin: 0px 20px;
+}
+
+.image_wrapper img {
+  width: 80%;
+}
+.marquee{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  margin-top: auto;
+}
+
+.relay{
+  width:80%;
+}
 
 /*Main-Text*/
-.MAIN{
-  height:100svh;
-}
 .main{
   display: flex;
   flex-direction: column;
@@ -227,7 +282,7 @@ body{
 }
 
 .text-content h1 {  
-  font-size: 14vh; 
+  font-size: 12vh; 
   font-weight: 900;
   font-family: Montserrat; 
   background: linear-gradient(90deg, #FFA401 0%, #FF6643 100%);
@@ -275,6 +330,52 @@ body{
   position:fixed;
 }
 
+/* scroll-bar */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 14px;
+  border: 2px solid rgb(192, 178, 178);
+}
+
+.custom::-webkit-scrollbar {
+  width: 3px;
+  overflow-y: hidden;
+}
+
+.custom::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+.custom::-webkit-scrollbar-thumb {
+  background-color: #00000000;
+  border: 2px solid rgba(192, 178, 178, 0);
+}
+
+.cus::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cus::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+.cus::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  margin:10px;
+  border-radius: 14px;
+  border: 2px solid rgb(192, 178, 178);
+}
+
 /* animation-keyframes */
 
 @keyframes myAnim {
@@ -315,9 +416,39 @@ body{
 /*Responsiveness*/
 
 @media (max-width: 980px){
+
+  .sponsor-container button{
+    width:40vh;
+  }
+  
+  .head-2{
+    margin: auto;
+    font-size: 2vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .image_wrapper {
+    margin: 0px 0px;
+  }
+  
+  .image_wrapper img {
+    width: 60%;
+  }
+
   .buttons{
     flex-direction: column;
   }
+.sponsor-heading h2{
+  font-size: 40px;
+}
+.sponsor-heading{
+  height:10vh;
+}
+
   .button1{
     font-family: Montserrat;
     font-size: medium;
@@ -366,10 +497,31 @@ body{
 }
 
 @media (max-width:630px){
+
+  .sponsor-container button{
+    width:30vh;
+    font-size: small;
+  }
+
+  .head-2{
+    margin: auto;
+    font-size: 1.6vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .text-content h1{
     font-size: 6.3vh;
   }
   .text-content img{
+    height:8vh;
+  }
+  .sponsor-heading h2{
+    font-size: 30px;
+  }
+  .sponsor-heading{
     height:8vh;
   }
 }
@@ -392,6 +544,7 @@ body{
 }
 
 @media (max-width:410px){
+
   .text-content h1{
     font-size: 5vh;
   }
@@ -401,5 +554,11 @@ body{
   .text-content h2{
     font-size: 1.8vh;
   }
+  .sponsor-heading h2{
+    font-size: 20px;
+  }
+  .sponsor-heading{
+    height:6vh;
+  }
 }
-
+ 
