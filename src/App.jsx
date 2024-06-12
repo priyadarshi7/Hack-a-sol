@@ -17,8 +17,8 @@ export default function App(){
             <Home />
             {loading===false && <Music/>}
             {loading===false && <Snackbar/>}
-            {loading===false && <Sponsor />}
             {loading===false && <Tracks />}
+            {loading===false && <Sponsor />}
             </div>
 
         )

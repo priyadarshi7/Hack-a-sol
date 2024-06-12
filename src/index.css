@@ -276,7 +276,7 @@ body{
 }
 .tracks_heading > h1 {
   font-weight: 900;
-  font-size: 55px;
+  font-size: 60px;
   letter-spacing: 2.5px;
   background: linear-gradient(91.98deg, #FF6445 59.07%, #FFA400 97.21%);
   -webkit-text-fill-color: transparent; 
@@ -481,7 +481,7 @@ body::-webkit-scrollbar-thumb {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   50% {
-    transform: rotateX(8deg) rotateY(-7deg) rotateZ(0.5deg);
+    transform: rotateX(8deg) rotateY(-10deg) rotateZ(0.5deg);
   }
   100% {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
