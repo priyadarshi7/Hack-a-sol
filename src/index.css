@@ -103,7 +103,7 @@
 
 /*Background*/
 .vid{
-  position: fixed; width: 100%; height: 100%; object-fit: cover; z-index: 0;
+  position: fixed; width: 100%; height: 100%; object-fit: cover; z-index: -1;
 }
 body{
   margin:0;
@@ -198,6 +198,64 @@ body{
   z-index: 1;
 } */
 
+/*Tracks*/
+
+.tracks_cont {
+  background-color: black;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9vh;
+}
+
+.tracks_heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.tracks_heading > h1 {
+  font-weight: 900;
+  font-size: 55px;
+  letter-spacing: 2.5px;
+  background: linear-gradient(91.98deg, #FF6445 59.07%, #FFA400 97.21%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.tracks_img {
+  background-image: url('./assets/TRACKS.png');
+  background-size: cover; 
+  height: 5.5rem;
+  width: 35rem;
+  position: relative;
+  bottom: 0.5rem;
+} 
+.tracks_events {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  bottom: 2rem;
+}
+.tracks_box {
+  background-color: white;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 1rem;
+}
+
+.tracks_foot > h2 {
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  background: linear-gradient(91.98deg, #FF6445 59.07%, #FFA400 97.21%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
 /*Main-Text*/
 .MAIN{
   height:100svh;
@@ -267,7 +325,7 @@ body{
   justify-content: flex-end;
   align-items: flex-end;
   bottom:0;
-  z-index: 1;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   animation: start-screen 4s ease 0s 1 normal forwards;
