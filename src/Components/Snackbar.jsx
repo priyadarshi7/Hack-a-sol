@@ -3,19 +3,21 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
 export default function CustomizedSnackbars() {
-  const [open, setOpen] = React.useState(true);
+  const [state, setState] = React.useState({
+    open: true,
+    vertical: 'bottom',
+    horizontal: 'right',
+  });
 
-  const handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
-      return;
-    }
+  const { vertical, horizontal, open } = state;
 
-    setOpen(false);
+  const handleClose = () => {
+    setState({ ...state, open: false });
   };
 
   return (
     <div>
-      <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={4000} onClose={handleClose} anchorOrigin={{ vertical, horizontal }}>
         <Alert
           onClose={handleClose}
           severity="success"
