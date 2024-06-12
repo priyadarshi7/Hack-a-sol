@@ -68,7 +68,7 @@ export default function Navbar(){
             </div>
             
             <Drawer open={showham} anchor="right" onClose={toggleham}  sx={{ backgroundColor:"hsba(340, 8%, 14%, 1)"}}   PaperProps={{sx: { backgroundColor: 'rgba(255, 255, 255, .10)',
-            backdropFilter: 'blur(5px)', color:'white', width:'50%'}}}>
+            backdropFilter: 'blur(5px)', color:'white', width:'50%', border:'1px solid rgb(255, 95, 31)', borderRight:'0px',borderTop:'0px'}}}>
                 {list_items}
             </Drawer>
         </div>

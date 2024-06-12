@@ -6,6 +6,8 @@
 
 .home{
   height:100svh;
+  margin: 0;
+  border: 0;
 }
 
 .buttons{
@@ -173,9 +175,28 @@ body{
   height:100svh;
 }
 
-.sponsor-container header{
-  background-image: url('./assets/Texts/Past_Sponsors.png');
+/* .sponsor-heading{
+  width:80%;
+  height:16vh;
+  background-image: url('./assets/Texts/sponsor.png');
+  border-left: 2vh;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+.sponsor-heading h2{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height:100%;
+  font-size: 100px;
+  font-weight: 900;
+  background: linear-gradient(91.98deg, #FF6445 59.07%, #FFA400 97.21%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  margin-bottom: 20px;
+  z-index: 1;
+} */
 
 /*Main-Text*/
 .MAIN{
@@ -317,7 +338,7 @@ body{
   .navbar img{
     margin-left: 1vh;
     margin-top: 1.2vh;
-    width:9vh;
+    width:8vh;
   }
   #ham-button{
     display: block;
@@ -326,7 +347,7 @@ body{
     display: none;
   }
   .text-content h1{
-    font-size: 9.5vh;
+    font-size: 6.3vh;
     margin-top: 40%;
   }
   .text-content img{
@@ -370,7 +391,7 @@ body{
   }
 }
 
-@media (max-width:400px){
+@media (max-width:410px){
   .text-content h1{
     font-size: 5vh;
   }
