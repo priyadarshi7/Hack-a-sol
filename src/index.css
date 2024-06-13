@@ -9,6 +9,9 @@
   margin: 0;
   border: 0;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttons{
@@ -86,6 +89,7 @@
 /*load-screen*/
 .load-screen{
   height:100svh;
+  width:100%;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -127,8 +131,6 @@ body{
   margin-right: auto;
   top:0;
   left: 0;
-  z-index:2;
-  position: fixed;
 }
 
 
@@ -138,6 +140,9 @@ body{
   height: 15vh;
   align-items: center;
   animation: start-screen 4s ease 0s 1 normal forwards;
+  top:0;
+  position: fixed;
+  z-index: 2;
 }
 
 .navbar-list{
@@ -152,7 +157,6 @@ body{
   align-items: center;
   position:fixed;
   right:0;
-  z-index: 1;
 }
 
 .navbar-list > li{

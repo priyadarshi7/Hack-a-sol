@@ -4,6 +4,7 @@ import Music from './Components/music.jsx'
 import Snackbar  from "./Components/Snackbar.jsx";
 import Sponsor from "./Components/Sponsor.jsx"
 import Tracks from "./Components/Tracks.jsx";
+import Navbar from './Components/Navbar.jsx'
 
 export default function App(){
 
@@ -14,6 +15,7 @@ export default function App(){
         return(
             
             <div className="main">
+           {loading===false && <Navbar/>}
             <Home />
             {loading===false && <Music/>}
             {loading===false && <Snackbar/>}
