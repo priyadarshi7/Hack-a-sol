@@ -5,6 +5,7 @@ import Snackbar  from "./Components/Snackbar.jsx";
 import Sponsor from "./Components/Sponsor.jsx"
 import Tracks from "./Components/Tracks.jsx";
 import Navbar from './Components/Navbar.jsx'
+import ContactUs from "./Components/ContactUs.jsx";
 
 export default function App(){
 
@@ -21,6 +22,7 @@ export default function App(){
             {loading===false && <Snackbar/>}
             {loading===false && <Tracks />}
             {loading===false && <Sponsor />}
+            <ContactUs />
             </div>
 
         )

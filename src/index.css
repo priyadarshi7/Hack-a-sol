@@ -248,6 +248,44 @@ body{
     transform: scale(1.1);
 }
 
+/* ContactUs */
+
+.contact-container{
+  background-color: black;
+  justify-content: center;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:100svh;
+}
+
+.contact-heading{
+  margin-top: 4vh;
+  background: url('./assets/Texts/ConatctUs.png');
+  background-position:top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:80%;
+  height: 17vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  border:0;
+  padding: 0;
+}
+
+.contact-heading h2{
+  background: linear-gradient(91.98deg, #FF6445 59.07%, #FFA400 97.21%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  margin-bottom: 20px;
+  margin: auto;
+  font-size: 70px;
+  font-weight: 900;
+}
+
 /* Carousel */
 .image_wrapper {
   margin: 0px 20px;
