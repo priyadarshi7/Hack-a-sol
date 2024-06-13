@@ -447,10 +447,11 @@ margin-bottom: 3vh;
 
 .mail-img{
   background-image: url('./assets/images/mail.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height:20px;
-  width:20px;
+  width:28px;
+  bottom:0;
 }
 .mail{
   display: flex;
@@ -463,22 +464,27 @@ margin-bottom: 3vh;
 /* Carousel */
 .image_wrapper {
   margin: 0px 0px;
-  width:400px;
+  width:300px;
 }
 
 .image_wrapper img {
   width: 70%;
-  height: 300px;
+  height: 100px;
+  border-radius: 20px;
 }
 .marquee{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width:100%;
   margin-top: auto;
 }
 
 .relay{
-  width:80%;
+  width:100%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 /*Tracks*/
@@ -741,6 +747,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 980px){
+
+  .card1{
+    width:80px;
+    height:80px;
+  }
+  .card2{
+    width:80px;
+    height:80px;
+  }
+  .card3{
+    width:80px;
+    height:80px;
+  }
+  .card4{
+    width:80px;
+    height:80px;
+  }
   .contact-foot{
     margin-bottom: 2vh;
   }
@@ -751,7 +774,7 @@ body::-webkit-scrollbar-thumb {
   
   .image_wrapper img {
     width: 60%;
-    height: 200px;
+    height: 100px;
   }
 
   .contact-foot{
@@ -886,6 +909,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width:630px){
+  .card1{
+    width:60px;
+    height:60px;
+  }
+  .card2{
+    width:60px;
+    height:60px;
+  }
+  .card3{
+    width:60px;
+    height:60px;
+  }
+  .card4{
+    width:60px;
+    height:60px;
+  }
+  .image_wrapper {
+    margin: 0px 0px;
+    width:180px;
+  }
+  .image_wrapper img {
+    width: 70%;
+    height: 80px;
+    border-radius: 20px;
+  }
 
   .contact-heading{
     height: 6vh;
@@ -944,6 +992,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width:410px){
+  .card1{
+    width:55px;
+    height:55px;
+  }
+  .card2{
+    width:55px;
+    height:55px;
+  }
+  .card3{
+    width:55px;
+    height:55px;
+  }
+  .card4{
+    width:55px;
+    height:55px;
+  }
   .contact-heading{
     height: 6.5vh;
   }
