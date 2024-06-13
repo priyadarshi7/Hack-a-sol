@@ -1,7 +1,7 @@
 import React from "react"
 import MainText from "./MainText.jsx"
 import Loading from "./Loading.jsx";
-import BgVideo from "../assets/BG_6mb.mp4"
+import BgVideo from "../assets/Videos/BG_6mb.mp4"
 
 export default function Home(){
     const [loading,setLoading]=React.useState(true);
