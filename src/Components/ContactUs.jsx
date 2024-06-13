@@ -8,9 +8,7 @@ return(
             <h2>CONTACT US</h2>
         </div>
             <div className="contact-foot">
-                
             </div>
     </div>
 )
-
 }

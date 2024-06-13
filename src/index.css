@@ -262,7 +262,7 @@ body{
 
 .contact-heading{
   margin-top: 4vh;
-  background: url('./assets/Texts/ConatctUs.png');
+  background: url('./assets/Texts/ContactUs.png');
   background-position:top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -285,6 +285,16 @@ body{
   font-size: 70px;
   font-weight: 900;
 }
+
+.contact-foot{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ContactUs links */
+
+
 
 /* Carousel */
 .image_wrapper {
