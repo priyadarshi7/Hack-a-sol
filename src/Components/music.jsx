@@ -1,4 +1,4 @@
-import cindrella from '../assets/cindrella.mp3'
+import cindrella from '../assets/Audio/cindrella.mp3'
 import useSound from 'use-sound'
 import React from 'react'
 import HeadsetIcon from '@mui/icons-material/Headset';

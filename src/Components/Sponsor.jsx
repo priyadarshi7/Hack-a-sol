@@ -1,5 +1,6 @@
 import React from "react"
 import Carousel from "./Carousel.jsx"
+import Carousel2 from "./Carousel2.jsx"
 
 export default function Sponsor(){
     return(
@@ -9,6 +10,7 @@ export default function Sponsor(){
             </div>
             <div className="marquee">
             <Carousel />
+            <Carousel2 />
             </div>
             <div className="head-2">
             <h2>Want to become a <span className="txt">Sponsor</span></h2>

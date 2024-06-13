@@ -182,7 +182,6 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:100svh;
   color: white;
 }
 .head-2{
@@ -241,6 +240,7 @@ body{
   font-weight: 600;
   margin-top: 10vh;
   transition: 0.1s;
+  margin-bottom: 10vh;
 }
 
 .sponsor-container button:hover{
@@ -257,7 +257,6 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:100svh;
 }
 
 .contact-heading{
@@ -288,31 +287,204 @@ body{
 
 .contact-foot{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width:80%;
+  margin:auto;
+  margin-bottom: 10vh;
+}
+
+.hack-image{
+  background-image: url('./assets/Hac-a-sol_logo.png');
+  height: 30vh;
+  width:30vh;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* ContactUs links */
 
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
 
+.link h3{
+margin-bottom: 3vh;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #037bb3;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: rgb(67, 66, 66);
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #6178fd;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+/* ContactUs mail */
+
+.contact-mail{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height:26vh;
+}
+
+.mail-img{
+  background-image: url('./assets/images/mail.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:20px;
+  width:28px;
+  bottom:0;
+}
+.mail{
+  display: flex;
+  gap:1vh;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+}
 
 /* Carousel */
 .image_wrapper {
-  margin: 0px 20px;
+  margin: 0px 0px;
+  width:300px;
 }
 
 .image_wrapper img {
-  width: 80%;
+  width: 70%;
+  height: 100px;
+  border-radius: 20px;
 }
 .marquee{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width:100%;
   margin-top: auto;
 }
 
 .relay{
-  width:80%;
+  width:100%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 /*Tracks*/
@@ -540,6 +712,7 @@ text-align: left;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10vh;
 }
 
 .text-content h1 {  
@@ -697,6 +870,57 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 980px){
+
+  .card1{
+    width:80px;
+    height:80px;
+  }
+  .card2{
+    width:80px;
+    height:80px;
+  }
+  .card3{
+    width:80px;
+    height:80px;
+  }
+  .card4{
+    width:80px;
+    height:80px;
+  }
+  .contact-foot{
+    margin-bottom: 2vh;
+  }
+  .image_wrapper {
+    margin: 0px 0px;
+    width:300px;
+  }
+  
+  .image_wrapper img {
+    width: 60%;
+    height: 100px;
+  }
+
+  .contact-foot{
+    flex-direction: column;
+  }
+  .link{
+    margin-bottom: 8vh;
+  }
+
+  .contact-mail{
+    justify-content: center;
+    align-items: center;
+  }
+  .mail{
+    margin-top: 4vh;
+  }
+
+  .contact-heading{
+    height: 10vh;
+  }
+  .contact-heading h2{
+    font-size: 5vh;
+  }
   .tracks_heading{
     height:10vh;
   }
@@ -817,6 +1041,38 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width:630px){
+  .card1{
+    width:60px;
+    height:60px;
+  }
+  .card2{
+    width:60px;
+    height:60px;
+  }
+  .card3{
+    width:60px;
+    height:60px;
+  }
+  .card4{
+    width:60px;
+    height:60px;
+  }
+  .image_wrapper {
+    margin: 0px 0px;
+    width:180px;
+  }
+  .image_wrapper img {
+    width: 70%;
+    height: 80px;
+    border-radius: 20px;
+  }
+
+  .contact-heading{
+    height: 6vh;
+  }
+  .contact-heading h2{
+    font-size: 30px;
+  }
 
 .tracks_heading h2{
   font-size: 30px;
@@ -868,6 +1124,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width:410px){
+  .card1{
+    width:55px;
+    height:55px;
+  }
+  .card2{
+    width:55px;
+    height:55px;
+  }
+  .card3{
+    width:55px;
+    height:55px;
+  }
+  .card4{
+    width:55px;
+    height:55px;
+  }
+  .contact-heading{
+    height: 6.5vh;
+  }
+  .contact-heading h2{
+    font-size: 2vh;
+  }
 
   .text-content h1{
     font-size: 5vh;
@@ -879,7 +1157,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.8vh;
   }
   .sponsor-heading h2{
-    font-size: 20px;
+    font-size: 2vh;
+  }
+  .tracks_heading h2{
+    font-size: 2vh;
+  }
+  .tracks_heading{
+    height:6.5vh;
   }
   .sponsor-heading{
     height:6.5vh;
