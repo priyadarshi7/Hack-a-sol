@@ -11,7 +11,7 @@ return(
             <div className="contact-foot">
                 <div className="hack-image"></div>
                 <div class="link">
-                    <h3>Social Handles</h3>
+                    <h3></h3>
                    <div class="up">
                      <button class="card1">
                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" className="instagram">
@@ -68,7 +68,7 @@ return(
             </div>
         </div>
         <div className="contact-mail">
-            <h3>Contact Us</h3>
+            <h3></h3>
             <div className="mail">
                 <div className="mail-img"></div>
                 <h3>hackasol@iiitnr.edu.in</h3>
