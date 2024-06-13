@@ -184,7 +184,6 @@ body{
   align-items: center;
   height:100svh;
   color: white;
-  margin-bottom: 20vh;
 }
 .head-2{
   margin: auto;
@@ -491,7 +490,6 @@ margin-bottom: 3vh;
   align-items: center;
   gap:20vh;
   color: white;
-  margin-bottom:20vh;
 }
 
 .tracks_heading{
