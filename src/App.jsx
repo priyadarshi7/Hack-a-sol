@@ -6,6 +6,7 @@ import Sponsor from "./Components/Sponsor.jsx"
 import Tracks from "./Components/Tracks.jsx";
 import Navbar from './Components/Navbar.jsx'
 import ContactUs from './Components/ContactUs.jsx';
+import AboutUs from "./Components/AboutUs.jsx"
 
 export default function App(){
 
@@ -20,6 +21,7 @@ export default function App(){
             <Home />
             {loading===false && <Music/>}
             {loading===false && <Snackbar/>}
+            {loading==false && <AboutUs/>}
             {loading===false && <Tracks />}
             {loading===false && <Sponsor />}
             {loading===false && <ContactUs />}
