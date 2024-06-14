@@ -10,21 +10,21 @@ import AboutUs from "./Components/AboutUs.jsx"
 
 export default function App(){
 
-    const [loadin,setLoading]=React.useState(true);
+    const [loading,setLoading]=React.useState(true);
     React.useEffect(()=>{
         setTimeout(()=>setLoading(false),4000)
     },[])
         return(
             
             <div className="main">
-           {loadin===false && <Navbar/>}
+           {loading===false && <Navbar/>}
             <Home />
-            {loadin===false && <Music/>}
-            {loadin===false && <Snackbar/>}
-            {loadin==false && <AboutUs/>}
-            {loadin===false && <Tracks />}
-            {loadin===false && <Sponsor />}
-            {loadin===false && <ContactUs />}
+            {loading===false && <Music/>}
+            {loading===false && <Snackbar/>}
+            {loading==false && <AboutUs/>}
+            {loading===false && <Tracks />}
+            {loading===false && <Sponsor />}
+            {loading===false && <ContactUs />}
             </div>
 
         )
