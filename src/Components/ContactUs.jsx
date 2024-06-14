@@ -2,13 +2,13 @@ import React from "react"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-AOS.init(); 
+AOS.init({once:true}); 
 
 export default function ContactUs(){
 
 return(
     <div className="contact-container" id="Contact Us">
-        <div className="contact-heading" data-aos="fade-down" data-aos-delay="450">
+        <div className="contact-heading" data-aos="fade-down" data-aos-delay="200">
             <h2>CONTACT US</h2>
         </div>
             <div className="contact-foot">
