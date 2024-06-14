@@ -1,22 +1,25 @@
 import React from "react"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
+AOS.init(); 
 
 export default function ContactUs(){
 
 return(
     <div className="contact-container" id="Contact Us">
-        <div className="contact-heading">
+        <div className="contact-heading" data-aos="fade-down" data-aos-delay="450">
             <h2>CONTACT US</h2>
         </div>
             <div className="contact-foot">
                 <div className="contact-logos">
-                <div className="hack-image"></div>
+                <div className="hack-image" data-aos="fade-right" data-aos-delay="700"></div>
                 {/* <hr/>
                 <div className="contact-sac-image"></div> */}
                 </div>
                 <div class="link">
                     <h3></h3>
-                   <div class="up">
+                   <div class="up" data-aos="flip-down" data-aos-delay="500">
                    <a href="https://www.instagram.com/hack_a_sol_iiitnr/" target="_main"><button class="card1">
                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" className="instagram">
 <g clip-path="url(#clip0_106_74)">
@@ -43,7 +46,7 @@ return(
 </svg>
                      </button></a>
             </div>
-            <div class="down">
+            <div class="down" data-aos="flip-up" data-aos-delay="550">
             <a href="https://github.com/hackasol-iiitnr" target="_main"><button class="card3">
                 <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg" className="github">
 <g clip-path="url(#clip0_106_83)">
@@ -73,7 +76,7 @@ return(
         </div>
         <div className="contact-mail">
             <h3></h3>
-            <div className="mail">
+            <div className="mail"  data-aos="fade-left" data-aos-delay="700">
                 <div className="mail-img"></div>
                 <h3>hackasol@iiitnr.edu.in</h3>
             </div>
