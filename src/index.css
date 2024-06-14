@@ -539,6 +539,8 @@ margin-bottom: 3vh;
 }
 
 .tracks_box {
+  background-image: url('./assets/images/Question[1].png');
+  background-size: contain;
   background-color: white;
   height: 18vh;
   width: 18vh;
