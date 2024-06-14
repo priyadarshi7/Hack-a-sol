@@ -1,11 +1,12 @@
 import React from 'react'
 import iiit from '../assets/images/iiitnr.png'
+import hackasolabout from '../assets/images/hackasol-about-pic.png'
 
 export default function AboutUs(){
 
 
     return (
-        <div className="main-about-us">
+        <div className="main-about-us" id="About Us">
             <div className="about-us-heading">
                 <h2>ABOUT US</h2>
             </div>
@@ -27,7 +28,7 @@ export default function AboutUs(){
                     </div>
                     <div className="small-content">Hack-A-Sol, the prestigious annual hackathon organized by IIIT-Naya Raipur (IIIT-NR), stands as a beacon of innovation and collaboration in the realm of technology and problem-solving. This pan-India event attracts some of the brightest minds from across the country, fostering a competitive yet cooperative environment where creativity meets practicality.Hack-A-Sol gathers students, developers, and tech enthusiasts to tackle real-world challenges through technology.</div>
                 </div>
-                <img src={iiit}></img>
+                <img src={hackasolabout}></img>
             </div>
             
         </div>

@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Tracks() {
     return(
-        <div className="tracks_cont">
+        <div className="tracks_cont" id="Tracks">
             <div className="tracks_heading">
                 <h2>TRACKS</h2>
             </div>

@@ -34,14 +34,17 @@ export default function Navbar(){
    
 
  
-    
+    const listitems=["About Us" , "Tracks", "Past Sponsors" , "Contact Us"];
+    const liststyle={
+        cursor:"pointer",
+    }
 
     const list_items = (
         <Box sx={{width:150}}>
             <List>
-                {["About Us" , "Sechdule", "Prizes" , "Tracks" , "Contact Us"].map((item,key)=>{
+                {listitems.map((item,key)=>{
                     return <ListItem key={key}>
-                        <ListItemText>{item}</ListItemText>
+                        <ListItemText onClick={() => window.location=`#${item}`} style={liststyle}>{item}</ListItemText>
                     </ListItem>
                 })}
             </List>
@@ -54,11 +57,10 @@ export default function Navbar(){
          <img src={sac_logo}></img>
          </a>  
             <ul className="navbar-list">
-                <li>About Us</li>
-                <li>Schedule</li>
-                <li>Prizes</li>
-                <li>Tracks</li>
-                <li>Contact Us</li>
+                <li onClick={() => window.location='#About Us'}>About Us</li>
+                <li onClick={() => window.location='#Tracks'}>Tracks</li>
+                <li onClick={() => window.location='#Past Sponsors'}>Past Sponsors</li>
+                <li onClick={() => window.location='#Contact Us'}>Contact Us</li>
             </ul>
             <div id="ham-button">
             <IconButton onClick={toggleham}><MenuIcon color="info" sx={{fontSize:"50px" , color:"white"}}/></IconButton>
