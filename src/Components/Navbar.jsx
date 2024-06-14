@@ -53,9 +53,9 @@ export default function Navbar(){
     return (
         <>
         <div className="navbar">
-         <a href="https://sac.iiitnr.ac.in/" className="logo">
+         {/* <a href="https://sac.iiitnr.ac.in/" className="logo"> */}
          <img src={sac_logo}></img>
-         </a>  
+         {/* </a>   */}
             <ul className="navbar-list">
                 <li onClick={() => window.location='#About Us'}>About Us</li>
                 <li onClick={() => window.location='#Tracks'}>Tracks</li>

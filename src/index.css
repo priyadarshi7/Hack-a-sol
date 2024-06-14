@@ -295,6 +295,11 @@ body{
   margin-bottom: 10vh;
 }
 
+.contact-logos{
+  display: flex;
+  gap:1.4vh;
+}
+
 .hack-image{
   background-image: url('./assets/Hac-a-sol_logo.png');
   height: 30vh;
@@ -302,6 +307,15 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+/* .contact-sac-image{
+  background-image: url('./assets/sac-logo.png');
+  height: 15vh;
+  width:15vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+} */
 
 /* ContactUs links */
 
@@ -869,6 +883,10 @@ text-align: left;
   .tracks_events{
     gap: 1.5rem;
   }
+}
+
+@media (max-width:1300px){
+
 }
 
 @media (max-width:1200px){

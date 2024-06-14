@@ -9,7 +9,11 @@ return(
             <h2>CONTACT US</h2>
         </div>
             <div className="contact-foot">
+                <div className="contact-logos">
                 <div className="hack-image"></div>
+                {/* <hr/>
+                <div className="contact-sac-image"></div> */}
+                </div>
                 <div class="link">
                     <h3></h3>
                    <div class="up">
