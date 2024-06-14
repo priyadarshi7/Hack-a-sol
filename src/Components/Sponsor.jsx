@@ -15,7 +15,7 @@ export default function Sponsor(){
             <div className="head-2">
             <h2>Want to become a <span className="txt">Sponsor</span></h2>
             <h2> of Hack-a-Sol 3.0 ?</h2>
-            <button>BECOME A SPONSOR</button>
+            <a href="https://forms.gle/4piXZrHb2XCUw7Gm6" target="_main"><button>BECOME A SPONSOR</button></a>
             </div>
         </div>
     )

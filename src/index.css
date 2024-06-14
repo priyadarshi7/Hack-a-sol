@@ -241,6 +241,7 @@ body{
   margin-top: 10vh;
   transition: 0.1s;
   margin-bottom: 10vh;
+  cursor: pointer;
 }
 
 .sponsor-container button:hover{
@@ -806,8 +807,8 @@ text-align: left;
 
 .two-boxes-div1 >  img{
   display: flex;
-  width:650px;
-  height:300px;
+  width:600px;
+  height:250px;
   border-radius: 25px;
   border: white 1px solid;
   margin:auto;
@@ -816,8 +817,8 @@ text-align: left;
 
 .two-boxes-div2>  img{
   display: flex;
-  width:650px;
-  height:300px;
+  width:600px;
+  height:250px;
   border-radius: 25px;
   border: white 1px solid;
   margin-left:50px;
@@ -870,7 +871,7 @@ text-align: left;
   }
 }
 
-@media (max-width:1300px){
+@media (max-width:1200px){
   .two-boxes-div1{
     width:70%;
     flex-direction: column;
@@ -1166,6 +1167,7 @@ text-align: left;
   .text-content h1{
     font-size: 6.3vh;
   }
+  
 }
 
 @media (min-height:1300px) and (max-height:1400px){
