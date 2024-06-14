@@ -4,7 +4,7 @@ import hackasolabout from '../assets/images/hackasol-about-pic.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-AOS.init(); 
+AOS.init({once: true}); 
 
 
 export default function AboutUs(){

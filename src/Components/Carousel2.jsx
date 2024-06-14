@@ -13,10 +13,10 @@ import img19 from "../assets/images/carousel-img/19.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-AOS.init(); 
+AOS.init({once:true}); 
 function Carousel2() {
   return (
-    <div className="relay" data-aos="zoom-in" data-aos-delay="500">
+    <div className="relay" data-aos="zoom-in" data-aos-delay="800">
 
       <div>
         <Marquee speed={150} delay={0} autoFill={true} direction="right">
