@@ -34,7 +34,7 @@ export default function Navbar(){
    
 
  
-    const listitems=["About Us" , "Tracks", "Past Sponsors" , "Contact Us"];
+    const listitems=["About Us" , "Tracks", "Home", "Past Sponsors" , "Contact Us"];
     const liststyle={
         cursor:"pointer",
     }
@@ -57,6 +57,7 @@ export default function Navbar(){
          <img src={sac_logo}></img>
          {/* </a>   */}
             <ul className="navbar-list">
+                <li onClick={() => window.location='#Home'}>Home</li>
                 <li onClick={() => window.location='#About Us'}>About Us</li>
                 <li onClick={() => window.location='#Tracks'}>Tracks</li>
                 <li onClick={() => window.location='#Past Sponsors'}>Past Sponsors</li>
