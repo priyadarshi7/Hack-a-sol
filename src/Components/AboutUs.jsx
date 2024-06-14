@@ -1,16 +1,21 @@
 import React from 'react'
 import iiit from '../assets/images/iiitnr.png'
 import hackasolabout from '../assets/images/hackasol-about-pic.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+AOS.init(); 
+
 
 export default function AboutUs(){
 
 
     return (
         <div className="main-about-us" id="About Us">
-            <div className="about-us-heading">
+            <div className="about-us-heading" data-aos="zoom-in-down" data-aos-duration="500">
                 <h2>ABOUT US</h2>
             </div>
-            <div className="two-boxes-div1">
+            <div className="two-boxes-div1" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
                 <img src={iiit}></img>
                 <div>
                     <div className="about-us-small">
@@ -21,7 +26,7 @@ export default function AboutUs(){
                 </div>
             </div>
 
-            <div className="two-boxes-div2">
+            <div className="two-boxes-div2" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
                 <div>
                     <div className="about-us-small">
                     <h2>ABOUT HACK-A-SOL</h2>
