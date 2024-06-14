@@ -57,11 +57,11 @@ export default function Navbar(){
          <img src={sac_logo}></img>
          {/* </a>   */}
             <ul className="navbar-list">
-                <li onClick={() => window.location='#Home'}>Home</li>
-                <li onClick={() => window.location='#About Us'}>About Us</li>
-                <li onClick={() => window.location='#Tracks'}>Tracks</li>
-                <li onClick={() => window.location='#Past Sponsors'}>Past Sponsors</li>
-                <li onClick={() => window.location='#Contact Us'}>Contact Us</li>
+                <li onClick={() => window.location='#Home'}><div className="nav-element nav-home">Home</div></li>
+                <li onClick={() => window.location='#About Us'}><div className="nav-element nav-about">About Us</div></li>
+                <li onClick={() => window.location='#Tracks'}><div className="nav-element nav-tracks">Tracks</div></li>
+                <li onClick={() => window.location='#Past Sponsors'}><div className="nav-element nav-sponsors">Past Sponsors</div></li>
+                <li onClick={() => window.location='#Contact Us'}><div className="nav-element nav-contact">Contact Us</div></li>
             </ul>
             <div id="ham-button">
             <IconButton onClick={toggleham}><MenuIcon color="info" sx={{fontSize:"50px" , color:"white"}}/></IconButton>

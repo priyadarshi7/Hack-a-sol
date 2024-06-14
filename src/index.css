@@ -124,6 +124,30 @@ body{
 
 /*Nav-Bar*/
 
+.nav-element{
+  border: 1px solid white;
+  border-radius: 8px;
+  width:8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  background-color: rgba(255, 255, 255, .10);
+  backdrop-filter: blur(5px);
+}
+.nav-about{
+  width:13vh;
+}
+.nav-tracks{
+  width:11vh;
+}
+.nav-sponsors{
+  width:18vh;
+}
+.nav-contact{
+  width:14vh;
+}
+
 .navbar img{
   width:16vh;
   margin-left:5vh;
@@ -153,14 +177,14 @@ body{
   flex-direction: row;
   font-family: Montserrat;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 12px;
   align-items: center;
   position:fixed;
   right:0;
 }
 
 .navbar-list > li{
-  margin-right:7vh;
+  margin-right:3.6vh;
   color: white;
   letter-spacing: 0.9px;
   transition: 0.1s;
@@ -460,6 +484,8 @@ margin-bottom: 3vh;
   height:26vh;
 }
 
+
+
 .mail-img{
   background-image: url('./assets/images/mail.png');
   background-size: cover;
@@ -467,13 +493,41 @@ margin-bottom: 3vh;
   height:20px;
   width:28px;
   bottom:0;
+  cursor: pointer;
+}
+.sac-img{
+  background-image: url('./assets/sac-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:28px;
+  width:28px;
+  bottom:0;
+  cursor: pointer;
 }
 .mail{
   display: flex;
+  flex-direction: column;
   gap:1vh;
   justify-content: center;
   align-items: center;
   margin:auto;
+  gap:2vh;
+}
+.hack-mail{
+  display: flex;
+  gap:1vh;
+}
+.hack-mail h3:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+.sac h3:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  }
+.sac{
+  display: flex;
+  gap:1.5vh;
 }
 
 /* Carousel */
@@ -708,16 +762,19 @@ body::-webkit-scrollbar-thumb {
 /* animation-keyframes */
 
 @keyframes myAnim {
-	0%,
+  0%{
+    opacity:0;
+  }
+  20%,
 	50%,
 	100% {
-	
+	opacity: 1;
     transform: scale(1);
 	}
 
 	25%,
 	75% {
-		
+		opacity: 1;
     transform: scale(1.2);
 	}
 }
@@ -760,6 +817,24 @@ body::-webkit-scrollbar-thumb {
 .about-us-small{
   display: flex;
   align-items: center;
+}
+
+.about-iiit-img{
+  background-image: url('./assets/Hac-a-sol_logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height:8vh;
+  width:8vh;
+  cursor: pointer;
+}
+
+.about-hack-small-img{
+  background-image: url('./assets/Hac-a-sol_logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height:8vh;
+  width:8vh;
+  cursor:pointer;
 }
 
 .main-about-us{
@@ -1094,7 +1169,7 @@ text-align: left;
   }
 }
 
-@media (max-width:630px){
+@media (max-width:660px){
   .about-us-heading{
     margin-top: 4vh;
     margin-bottom: 4vh;
@@ -1117,6 +1192,10 @@ text-align: left;
   .two-boxes-div2 h2{
     font-size: 16px;
   }
+}
+
+@media (max-width:630px){
+
   .card1{
     width:60px;
     height:60px;
@@ -1200,6 +1279,21 @@ text-align: left;
   }
 }
 
+@media (max-width:440px){
+.about-iiit-img{
+  height:6vh;
+  width:6vh;
+}
+.about-us-small h2{
+  line-height: 20px;
+  font-size: 1.5vh;
+}
+.about-hack-small-img{
+  height:6vh;
+  width:6vh;
+}
+}
+
 @media (max-width:410px){
   .card1{
     width:55px;
@@ -1252,4 +1346,24 @@ text-align: left;
     font-size: 2vh;
   }
 }
- 
+@media (width:1024px){
+  .head-2{
+    font-size: 2.6vh;
+  }
+}
+@media (width:1024px) and (height:1366px){
+  #ham-button{
+    display: block;
+  }
+  .navbar-list{
+    display: none;
+  }
+  .tracks_box{
+    height:12vh;
+    width:12vh;
+  }
+  .hack-image{
+    height:20vh;
+    width:20vh;
+  }
+}

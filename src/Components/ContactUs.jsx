@@ -77,8 +77,14 @@ return(
         <div className="contact-mail">
             <h3></h3>
             <div className="mail">
+                <div className="hack-mail">
                 <div className="mail-img"></div>
-                <h3>hackasol@iiitnr.edu.in</h3>
+                <h3 onClick={() => window.open('mailto:hackasol@iiitnr.edu.in', '_main')}>hackasol@iiitnr.edu.in</h3>
+                </div>
+                <div className="sac">
+                <div className="sac-img"></div>
+                <h3 onClick={() => window.open('https://sac.iiitnr.ac.in/', '_main')}>https://sac.iiitnr.ac.in/</h3>
+                </div>
             </div>
         </div>
         </div>
