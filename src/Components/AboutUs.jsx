@@ -1,6 +1,6 @@
 import React from 'react'
-import iiit from '../assets/images/iiitnr.png'
-import hackasolabout from '../assets/images/hackasol-about-pic.png'
+import iiit from '../assets/images/final-iiit.png'
+import hackasolabout from '../assets/images/hackimage-final.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 

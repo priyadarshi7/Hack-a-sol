@@ -868,7 +868,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-iiit-img{
-  background-image: url('./assets/images/final-iiit.png');
+  background-image: url('./assets/images/iiit logo.png');
   background-repeat: no-repeat;
   background-size: contain;
   height:3.5vh;
@@ -878,7 +878,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-hack-small-img{
-  background-image: url('./assets/hackimage-final.png');
+  background-image: url('./assets/Hac-a-sol_logo.png');
   background-repeat: no-repeat;
   background-size: contain;
   cursor:pointer;
