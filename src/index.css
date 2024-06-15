@@ -464,6 +464,8 @@ margin-bottom: 3vh;
 }
 
 .discord {
+  height:2.6vh;
+  width:2.6vh;
   margin-top: -.9em;
   margin-left: -1.2em;
   fill: #8c9eff;

@@ -10,7 +10,7 @@ export default function MainText(){
                 <h2>Annual Pan-India <span className="txt">Hackathon</span><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by IIIT-Naya Raipur</h2>
                 <div className="buttons">
                     {/* <div className="button1" onClick={() => window.open(url, '_main')} ><div className="img_registration"></div><div>PRE-REGISTER NOW</div></div> */}
-                    <div className="button2" onClick={() => window.open(url, '_main')}  ><div className="img-discord"></div><div>JOIN OUR DISCORD</div></div></div><div>
+                    <div className="button2" onClick={() => window.open('https://discord.gg/gejd3wHT', '_main')}><div className="img-discord"></div><div>JOIN OUR DISCORD</div></div></div><div>
                 </div>
             </div>
         </div>
