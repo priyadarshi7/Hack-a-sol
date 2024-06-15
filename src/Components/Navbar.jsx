@@ -34,7 +34,7 @@ export default function Navbar(){
    
 
  
-    const listitems=["About Us" , "Tracks", "Home", "Past Sponsors" , "Contact Us"];
+    const listitems=["Home", "About Us", "Tracks", "Past Sponsors", "Contact Us"];
     const liststyle={
         cursor:"pointer",
     }
