@@ -408,8 +408,8 @@ margin-bottom: 3vh;
 }
 
 .instagram {
-  height:2vh;
-  width:2vh;
+  height:2.6vh;
+  width:2.6vh;
   margin-top: 1.5em;
   margin-left: 1.2em;
   fill: #cc39a4;
@@ -427,8 +427,8 @@ margin-bottom: 3vh;
 }
 
 .twitter {
-  height:2vh;
-  width:2vh;
+  height:2.6vh;
+  width:2.6vh;
   margin-top: 1.5em;
   margin-left: -.9em;
   fill: #03A9F4;
@@ -446,8 +446,8 @@ margin-bottom: 3vh;
 }
 
 .linkedin {
-  height:2vh;
-  width:2vh;
+  height:2.6vh;
+  width:2.6vh;
   margin-top: -.6em;
   margin-left: 1.2em;
 }
@@ -464,8 +464,8 @@ margin-bottom: 3vh;
 }
 
 .discord {
-  height:2.6vh;
-  width:2.6vh;
+  height:3vh;
+  width:3vh;
   margin-top: -.9em;
   margin-left: -1.2em;
   fill: #8c9eff;
