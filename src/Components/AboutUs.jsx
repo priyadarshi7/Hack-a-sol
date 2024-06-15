@@ -29,7 +29,7 @@ export default function AboutUs(){
             <div className="two-boxes-div2">
                 <div>
                     <div className="about-us-small">
-                    <div className="about-hack-small-img" onClick={() => window.open('', '_main')}></div><h2>ABOUT HACK-A-SOL</h2>
+                    <div className="about-hack-small-img" onClick={() => window.open('https://sac.iiitnr.ac.in/', '_main')}></div><h2>ABOUT HACK-A-SOL</h2>
                     </div>
                     <div className="small-content" data-aos="zoom-in" data-aos-delay="250">Hack-A-Sol, the prestigious annual hackathon organized by IIIT-Naya Raipur (IIIT-NR), stands as a beacon of innovation and collaboration in the realm of technology and problem-solving. This pan-India event attracts some of the brightest minds from across the country, fostering a competitive yet cooperative environment where creativity meets practicality.Hack-A-Sol gathers students, developers, and tech enthusiasts to tackle real-world challenges through technology.</div>
                 </div>

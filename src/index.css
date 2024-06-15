@@ -132,7 +132,7 @@ body{
   align-items: center;
   justify-content: center;
   height: 4vh;
-  background-color: rgba(255, 255, 255, .10);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
 }
 .nav-about{
@@ -332,6 +332,34 @@ body{
   background-size: contain;
 }
 
+.masthead span{
+  font-family: Montserrat; 
+  background: linear-gradient(90deg, #FFA401 0%, #FF6643 100%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  cursor: pointer;
+}
+
+.masthead span:hover{
+  font-size: medium;
+  text-decoration: underline white;
+}
+
+.masthead-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  margin-bottom: 2vh;
+}
+
+.masthead{
+  color: white;
+  font-size:1.5vh;
+  text-align:center;
+}
+
 /* .contact-sac-image{
   background-image: url('./assets/sac-logo.png');
   height: 15vh;
@@ -380,6 +408,8 @@ margin-bottom: 3vh;
 }
 
 .instagram {
+  height:2vh;
+  width:2vh;
   margin-top: 1.5em;
   margin-left: 1.2em;
   fill: #cc39a4;
@@ -397,6 +427,8 @@ margin-bottom: 3vh;
 }
 
 .twitter {
+  height:2vh;
+  width:2vh;
   margin-top: 1.5em;
   margin-left: -.9em;
   fill: #03A9F4;
@@ -413,7 +445,9 @@ margin-bottom: 3vh;
   transition: .2s ease-in-out;
 }
 
-.github {
+.linkedin {
+  height:2vh;
+  width:2vh;
   margin-top: -.6em;
   margin-left: 1.2em;
 }
@@ -448,7 +482,7 @@ margin-bottom: 3vh;
 .card2:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #037bb3;
+  background-color: rgb(59, 59, 59);
 }
 
 .card2:hover .twitter {
@@ -458,7 +492,7 @@ margin-bottom: 3vh;
 .card3:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: rgb(67, 66, 66);
+  background-color: #0494d7;
 }
 
 .card3:hover .github {
@@ -468,7 +502,7 @@ margin-bottom: 3vh;
 .card4:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #6178fd;
+  background-color: #506afc;
 }
 
 .card4:hover .discord {
@@ -820,21 +854,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-iiit-img{
-  background-image: url('./assets/Hac-a-sol_logo.png');
+  background-image: url('./assets/images/iiit logo.png');
   background-repeat: no-repeat;
   background-size: contain;
-  height:8vh;
-  width:8vh;
+  height:3.5vh;
+  width:3.5vh;
   cursor: pointer;
+  margin-right: 0.5vh;
 }
 
 .about-hack-small-img{
   background-image: url('./assets/Hac-a-sol_logo.png');
   background-repeat: no-repeat;
   background-size: contain;
+  cursor:pointer;
   height:8vh;
   width:8vh;
-  cursor:pointer;
 }
 
 .main-about-us{
@@ -915,12 +950,12 @@ text-align: left;
 
 .about-us-heading{
   margin-top: 4vh;
-  background-image: url('./assets/Texts/aboutus.png');
+  background-image: url('./assets/Texts/about.png');
   background-position:top;
   background-size: contain;
   background-repeat: no-repeat;
-  width:80%;
-  height: 19vh;
+  width:70%;
+  height: 10vh;
   margin-bottom: 6vh;
   display: flex;
   justify-content: center;
@@ -937,7 +972,7 @@ text-align: left;
   -webkit-background-clip: text; 
   margin-bottom: 20px;
   margin: auto;
-  margin-top: 8vh;
+  margin-top: 6vh;
   font-size: 70px;
   font-weight: 900;
 }
@@ -984,12 +1019,16 @@ text-align: left;
 }
 
 @media (max-width: 980px){
+  .masthead{
+    color: white;
+    font-size:1.2vh;
+  }
   .about-us-heading{
     height: 9vh;
   }
   .about-us-heading h2{
-    font-size: 3vh;
-    margin-top: 4vh;
+    font-size: 5vh;
+    margin-top: 3vh;
   }
 
   .two-boxes-div1 img{
@@ -1174,6 +1213,10 @@ text-align: left;
     margin-top: 4vh;
     margin-bottom: 4vh;
   }
+  .about-us-heading h2{
+    font-size: 3vh;
+    margin-top: 2vh;
+  }
   .two-boxes-div1 h2{
     font-size: 16px;
   }
@@ -1281,16 +1324,16 @@ text-align: left;
 
 @media (max-width:440px){
 .about-iiit-img{
-  height:6vh;
-  width:6vh;
+  height:3vh;
+  width:3vh;
 }
 .about-us-small h2{
   line-height: 20px;
   font-size: 1.5vh;
 }
 .about-hack-small-img{
-  height:6vh;
-  width:6vh;
+  height:5vh;
+  width:5vh;
 }
 }
 
