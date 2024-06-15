@@ -1,5 +1,5 @@
 import React from "react"
-import sac_logo from "../assets/Hac-a-sol_logo.png"
+import hack_a_sol_logo from "../assets/images/final hackasol logo.png"
 import {useState} from 'react'
 
 import Box from '@mui/material/Box';
@@ -54,7 +54,7 @@ export default function Navbar(){
         <>
         <div className="navbar">
          {/* <a href="https://sac.iiitnr.ac.in/" className="logo"> */}
-         <img src={sac_logo} alt=""/>
+         <img src={hack_a_sol_logo} alt=""/>
          {/* </a>   */}
             <ul className="navbar-list">
                 <li onClick={() => window.location='#Home'}><div className="nav-element nav-home">Home</div></li>

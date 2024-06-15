@@ -161,7 +161,7 @@ body{
 }
 
 .navbar img{
-  width:16vh;
+  width:15vh;
   margin-left:5vh;
   animation: start-screen 5s ease 0s 1 normal forwards;
   margin-right: auto;
@@ -868,7 +868,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-iiit-img{
-  background-image: url('./assets/images/iiit logo.png');
+  background-image: url('./assets/images/final-iiit.png');
   background-repeat: no-repeat;
   background-size: contain;
   height:3.5vh;
@@ -878,7 +878,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-hack-small-img{
-  background-image: url('./assets/Hac-a-sol_logo.png');
+  background-image: url('./assets/hackimage-final.png');
   background-repeat: no-repeat;
   background-size: contain;
   cursor:pointer;
@@ -1195,7 +1195,7 @@ text-align: left;
   .navbar img{
     margin-left: 1vh;
     margin-top: 1.2vh;
-    width:8vh;
+    width:10vh;
   }
   #ham-button{
     display: block;
