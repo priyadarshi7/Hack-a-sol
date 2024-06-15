@@ -4,6 +4,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html{
+  background-color: #000000;
+}
+
 .home{
   height:100svh;
   margin: 0;
