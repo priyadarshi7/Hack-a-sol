@@ -54,7 +54,7 @@ export default function Navbar(){
         <>
         <div className="navbar">
          {/* <a href="https://sac.iiitnr.ac.in/" className="logo"> */}
-         <img src={sac_logo}></img>
+         <img src={sac_logo} alt=""/>
          {/* </a>   */}
             <ul className="navbar-list">
                 <li onClick={() => window.location='#Home'}><div className="nav-element nav-home">Home</div></li>

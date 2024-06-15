@@ -4,8 +4,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-html{
+body{
   background-color: #000000;
+}
+
+.container p{
+  color: white;
+  font-family: cyberstar;
+  transform: rotate(-90deg);
 }
 
 .home{
@@ -123,7 +129,6 @@ body{
   background-position: center;
   position: relative;
   height:100svh;
-  cursor: url('./assets/pointer.jpg'),auto;
 }
 
 /*Nav-Bar*/

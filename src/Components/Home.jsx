@@ -10,7 +10,7 @@ export default function Home(){
     },[])
     return(
         <div className="home" id="Home">
-        <video autoPlay loop muted className="vid"><source src={BgVideo} type="video/mp4" /> </video>
+        <video autoPlay loop muted className="vid" alt=""><source src={BgVideo} type="video/mp4" /> </video>
         {loading && <Loading loading={loading}/>}
         {loading===false && <MainText/>}
             </div>

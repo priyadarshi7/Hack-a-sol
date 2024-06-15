@@ -6,7 +6,7 @@ export default function MainText(){
         <div className="container">
             <div className="text-content">
                 <h1>HACK-A-SOL</h1>
-                <img src={comingSoon}/>
+                <img src={comingSoon} alt=""/>
                 <h2>Annual Pan-India <span className="txt">Hackathon</span><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by IIIT-Naya Raipur</h2>
                 <div className="buttons">
                     {/* <div className="button1" onClick={() => window.open(url, '_main')} ><div className="img_registration"></div><div>PRE-REGISTER NOW</div></div> */}
