@@ -32,6 +32,9 @@ body{
   margin-top: 6vh;
   animation: start-screen 4s ease 0s 1 normal forwards;
 }
+.home.loading {
+  background-color: black;
+}
 
 .button1{
   display: flex;
