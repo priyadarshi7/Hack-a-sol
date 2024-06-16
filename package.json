@@ -22,6 +22,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.4",
+    "react-scroll-to-top": "^3.0.0",
     "tailwind-merge": "^0.1.1",
     "use-sound": "^4.0.1"
   },
