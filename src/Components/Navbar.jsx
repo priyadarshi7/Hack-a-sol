@@ -44,7 +44,7 @@ export default function Navbar(){
             <List>
                 {listitems.map((item,key)=>{
                     return <ListItem key={key}>
-                        <ListItemText onClick={() => window.location=`#${item}`} style={liststyle}>{item}</ListItemText>
+                        <ListItemText onClick={() => {window.location=`#${item}`; toggleham()}} style={liststyle} >{item}</ListItemText>
                     </ListItem>
                 })}
             </List>
@@ -67,8 +67,8 @@ export default function Navbar(){
             <IconButton onClick={toggleham}><MenuIcon color="info" sx={{fontSize:"50px" , color:"white"}}/></IconButton>
             </div>
             
-            <Drawer open={showham} anchor="right" onClose={toggleham}  sx={{ backgroundColor:"hsba(340, 8%, 14%, 1)"}}   PaperProps={{sx: { backgroundColor: 'rgba(255, 255, 255, .10)',
-            backdropFilter: 'blur(5px)', color:'white', width:'50%', border:'1px solid rgb(255, 95, 31)', borderRight:'0px',borderTop:'0px'}}}>
+            <Drawer open={showham} anchor="right" onClose={toggleham}  sx={{ backgroundColor:"hsba(340, 8%, 14%, 1)"}}   PaperProps={{sx: { backgroundColor: 'rgba(0, 0, 0, .1)',
+             color:'white', width:'50%', border:'1px solid rgb(255, 95, 31)', borderRight:'0px',borderTop:'0px'}}}>
                 {list_items}
             </Drawer>
         </div>
