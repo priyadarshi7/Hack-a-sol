@@ -726,12 +726,12 @@ text-decoration: underline;
   -webkit-background-clip: text; 
   margin-bottom: 20px;
   cursor:default;
-  animation: start-screen 4s ease 0s 1 normal forwards;
+  /* animation: start-screen 4s ease 0s 1 normal forwards; */
 }
 
 .text-content img{
   height:16vh;
-  animation: start-screen 5s ease 0s 1 normal forwards;
+  /* animation: start-screen 5s ease 0s 1 normal forwards; */
 }
 
 .text-content span{
@@ -747,7 +747,7 @@ text-decoration: underline;
   font-size: 4vh;
   margin-top:20px;
   cursor: default;
-  animation: start-screen 4s ease 0s 1 normal forwards;
+  /* animation: start-screen 4s ease 0s 1 normal forwards; */
 }
 
 /*music*/
