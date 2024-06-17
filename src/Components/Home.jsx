@@ -22,7 +22,7 @@ import MainText from "./MainText.jsx";
 import Loading from "./Loading.jsx";
 import BgVideo from "../assets/Videos/BG_6mb.mp4";
 
-export default function Home() {
+export default function Home(props) {
   const [loading, setLoading] = useState(true);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
@@ -48,7 +48,7 @@ export default function Home() {
       </video>
       {!isVideoLoaded && <div style={{ height: '100vh', backgroundColor: 'black' }}></div>}
       {loading && <Loading loading={loading} />}
-      {loading === false && isVideoLoaded && <MainText />}
+      {loading === false && isVideoLoaded && <MainText modalAppear={props.modalAppear}/>}
     </div>
   );
 }
