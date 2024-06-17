@@ -35,4 +35,5 @@ app.post("/register", (req, res) => {
     }).catch((err) => {
         console.log(err);
     });
+    res.redirect("http://localhost:5173");
 });
