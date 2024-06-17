@@ -38,5 +38,3 @@ app.post("/register", (req, res) => {
     // res.redirect("http://localhost:5173");
     res.send("Hello");
 });
-
-module.exports = app;
