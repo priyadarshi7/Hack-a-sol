@@ -37,7 +37,7 @@ export default function App(){
             
             <div className="main">
            {loading===false && <Navbar/>}
-           {/* {loading===false && <PreRegister showModal={showModal} closeModal={closeModal}/>} */}
+           {loading===false && <PreRegister showModal={showModal} closeModal={closeModal}/>}
             <Home modalAppear={modalAppear}/>
             {loading===false && <Music/>}
             {loading===false && <Snackbar/>}
