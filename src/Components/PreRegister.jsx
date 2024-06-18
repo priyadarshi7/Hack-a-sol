@@ -18,12 +18,12 @@ export default function PreRegister(props){
           <div className={props.showModal?"form-img":""}><img src={Hack} style={style}/></div>
           <div className={props.showModal?"form-container":""}>
               <form className={props.showModal?"forms-form":""} action="https://back-w65f.onrender.com/register" method="POST">
-                  <input type="text" placeholder="Name" id="name" name="name" style={style}/>
-                  <input type="text" placeholder="College Name" id="college" name="c_name" style={style}/>
-                  <input type="email" placeholder="Your Email" id="mail" name="email" style={style}/>
+                  <input required type="text" placeholder="Name" id="name" name="name" style={style}/>
+                  <input required type="text" placeholder="College Name" id="college" name="c_name" style={style}/>
+                  <input required type="email" placeholder="Your Email" id="mail" name="email" style={style}/>
                   <div class="mob-number">
                       <div style={style2} className={props.showModal?"phone-code":""}>+91</div>
-                      <input type="number" placeholder="Mobile Number" id="mobile" name="p_number" style={style}/>
+                      <input required type="number" placeholder="Mobile Number" id="mobile" name="p_number" style={style}/>
                   </div>
                   <div className="modal-button" style={style2}>
                   <button style={style} onClick={props.closeModal}>CLOSE</button>
