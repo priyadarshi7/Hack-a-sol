@@ -126,7 +126,6 @@ body{
 
 /* modal-box */
 .forms{
-  overflow: hidden;
   position: fixed;
   z-index: 5;
   display: flex;
@@ -140,65 +139,72 @@ body{
 .form-container-main{
   z-index: 7;
   position: absolute;
-  margin: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   color: white;
-  justify-content:space-between;
+  justify-content:space-evenly;
   background: black;
-  height:600px;
-  width:600px;
+  height:700px;
+  width:800px;
   border-radius: 25px;
   border:2px solid #FFA401;
   padding: 0;
   background-color: rgba(0,0,0,0.8);
   backdrop-filter: blur('5px');
 }
-.form-container-main h3{
-  margin:auto;
-  margin-bottom: 1vh;
+.form-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.form-image-main{
-  z-index: 20;
-  position: absolute;
-  align-self: center;
-  margin-top: 23vh;
+.form-img img{
+  height:100px;
+  width:150px;
 }
 .form-container{
-  background: rgba(255, 164, 1);
-  backdrop-filter: blur('5px');
-  height:60%;
-  border-radius: 25px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: rgba(255, 164, 1);
+  height:70%;
+  border-radius: 25px;
 }
 .forms-form{
   display: flex;
   flex-direction: column;
-  gap:2vh;
-  height:100%;
+  height:80%;
   width:100%;
-  align-items: center;
-  justify-content: center;
+  margin:auto;
+  top:0;
+  bottom:0;
 }
+.form-boxes{
+  width:100%;
+  display: flex;
+  margin: auto;
+}
+
+.form-box{
+  width:100%;
+}
+
 .forms-form input{
   height:35px;
-  width:80%;
+  width: 90%;
   padding-left: 1vh;
   border-radius: 8px;
   outline: none;
   border: none;
+  margin:auto;
+  margin-top:0 ;
+  margin-bottom: 0;
 }
-.modal-button{
-  width:100%;
-  display: flex;
-  gap:2vh;
-  align-items: center;
-  justify-content: center;
-}
+
 .phone-code{
   height:30px;
   width:10%;
@@ -209,18 +215,38 @@ body{
   justify-content: center;
   border-radius: 6px;
 }
+
 .mob-number input{
   width:90%;
+  margin: auto;
 }
+
 .mob-number{
-  width:80%;
+  height:35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1vh;
+  margin:auto;
+}
+
+
+/* input:invalid + span::after {
+  content: "✖";
+  color: #8b0000;
+} */
+
+input:valid + span::after {
+  content: "✓";
+  color: #009000;
+}
+.modal-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2vh;
 }
 .forms-form button{
-  height:45px;
+  height:40px;
   width:40%;
   border-radius: 8px;
   color: white;
@@ -235,21 +261,13 @@ body{
   transform: scale(1.1);
   background: #FF2A00;
 }
-.form-img{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 2vh;
-}
-.form-img img{
-  height:100px;
-  width:150px;
-}
 
+label{
+  color: #000000;
+  font-size: small;
+  font-weight: 500;
+  margin-top: 10px;
+} 
 /*Background*/
 .vid{
   position:fixed; width: 100%; height: 100%; object-fit: cover; z-index: -1;
@@ -1164,6 +1182,11 @@ text-align: left;
 }
 
 @media (max-width: 980px){
+  .form-container-main{
+    height:75%;
+    width:360px;
+  }
+
   .masthead{
     color: white;
     font-size:1.2vh;
@@ -1347,6 +1370,12 @@ text-align: left;
   }
 } 
 
+@media (min-height:750px){
+  .form-container-main{
+    height:500px;
+  }
+}
+
 @media (min-width: 980px){
   #ham-button{
     display: none;
@@ -1354,10 +1383,6 @@ text-align: left;
 }
 
 @media (max-width:660px){
-  .form-container-main{
-    height: 500px;
-    width:300px;
-  }
   .about-us-heading{
     margin-top: 4vh;
     margin-bottom: 4vh;
@@ -1557,5 +1582,11 @@ text-align: left;
   .hack-image{
     height:20vh;
     width:20vh;
+  }
+}
+
+@media (max-height:650px){
+  .form-container-main{
+    height:95%;
   }
 }
