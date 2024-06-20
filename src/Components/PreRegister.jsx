@@ -19,7 +19,7 @@ export default function PreRegister(props){
           <h3>WELCOME TO</h3>
           <div className={props.showModal?"form-img":""}><img src={Hack} style={style}/></div>
           <div className={props.showModal?"form-container":""}>
-              <form className={props.showModal?"forms-form":""} action="https://back-w65f.onrender.com/register" method="POST">
+              <form className={props.showModal?"forms-form":""} action="http://localhost:3000/register" method="POST">
                   {/*Name*/}
                   <label htmlFor={id}>Name</label>
                   <input required type="text" placeholder="Name" id={id} name="name" style={style}/>
