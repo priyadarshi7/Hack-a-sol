@@ -45,7 +45,7 @@ export default function PreRegister(props){
                   <label htmlFor={id}>Branch</label>
                   {/*Year*/}
                   <input required type="text" placeholder="Branch" id={id} name="branch" style={style}/>
-                  <label htmlFor={id}>Year</label>
+                  <label htmlFor={id}>Passout Year (20XX)</label>
                   <input required type="year" placeholder="Year" id="year" name="year" style={style}/>
                   {/*College Name*/}
                   <label htmlFor={id}>College Name</label>
