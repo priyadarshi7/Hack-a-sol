@@ -35,7 +35,7 @@ body{
   align-items: center;
   gap: 4vh;
   margin-top: 6vh;
-  animation: start-screen 4s ease 0s 1 normal forwards;
+  animation: start-screen 4s ease 0s infinite normal forwards;
 }
 .home.loading {
   background-color: black;
