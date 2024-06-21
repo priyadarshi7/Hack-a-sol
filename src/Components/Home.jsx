@@ -23,31 +23,32 @@ import Loading from "./Loading.jsx";
 import BgVideo from "../assets/Videos/BG_6mb.mp4";
 
 export default function Home(props) {
-  // const [loading, setLoading] = useState(true);
-  // const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
-  // useEffect(() => {
-   // setTimeout(() => setLoading(false), 4000);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 4000);
 
-  //   const video = document.querySelector('.vid');
-  //   const handleLoadedData = () => {
-  //     setIsVideoLoaded(true);
-  //   };
+    const video = document.querySelector('.vid');
+    const handleLoadedData = () => {
+      setIsVideoLoaded(true);
+    };
 
-  //   video.addEventListener('loadeddata', handleLoadedData);
+    video.addEventListener('loadeddata', handleLoadedData);
 
-  //   return () => {
-  //     video.removeEventListener('loadeddata', handleLoadedData);
-  //   };
-  // }, []);
+    return () => {
+      video.removeEventListener('loadeddata', handleLoadedData);
+    };
+  }, []);
 
   return (
-    <div className="home" id="Home">
-      <video autoPlay loop muted className="vid">
+    <div className={`home ${!isVideoLoaded ? 'loading' : ''}`} id="Home">
+      <video autoPlay loop muted className="vid" style={{ display: isVideoLoaded ? 'block' : 'none' }}>
         <source src={BgVideo} type="video/mp4" />
       </video>
-      <div style={{ height: '100vh', backgroundColor: 'black' }}></div>
-      <MainText modalAppear={props.modalAppear}/>
+      {!isVideoLoaded && <div style={{ height: '100vh', backgroundColor: 'black' }}></div>}
+      {loading && <Loading loading={loading} />}
+      {loading === false && isVideoLoaded && <MainText modalAppear={props.modalAppear}/>}
     </div>
   );
 }
