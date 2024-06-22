@@ -36,7 +36,7 @@ export default function PreRegister(props){
                   <label htmlFor={id}>Phone Number</label>
                   <div class="mob-number" id={id}>
                       {/* <div style={style2} className={props.showModal?"phone-code":""}>+91</div> */}
-                      <input required type="text" className="phone" placeholder="Mobile Number" id={id} name="p_number" style={style} pattern="[0-9]{11}"/><span class="validity" ></span>
+                      <input required type="text" className="phone" placeholder="Mobile Number" id={id} name="p_number" style={style} pattern="[0-9]{10}"/><span class="validity" ></span>
                   </div>
                   </div>
                   {/* Branch,Year and College Name */}
