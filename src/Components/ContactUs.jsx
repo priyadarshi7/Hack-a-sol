@@ -95,7 +95,7 @@ return(
         </div>
         </div>
         <div className="masthead-main">
-        <div className="masthead">Design by <span onClick={() => window.open('https://www.linkedin.com/in/kaushalranjan/', '_main')}>Kaushal Ranjan</span> and Developed by <span onClick={() => window.open('https://www.linkedin.com/in/priyadarshi-satyakam-688127290/', '_main')}>Priyadarshi Satyakam</span>, <span onClick={() => window.open('https://www.linkedin.com/in/kushagra-verma-a08a1828b/', '_main')}>Kushagra Verma</span> and <span onClick={() => window.open('https://www.linkedin.com/in/yash-joshi-069263168/', '_main')}> Yash Joshi</span></div>
+        {/* <div className="masthead">Design by <span onClick={() => window.open('https://www.linkedin.com/in/kaushalranjan/', '_main')}>Kaushal Ranjan</span> and Developed by <span onClick={() => window.open('https://www.linkedin.com/in/priyadarshi-satyakam-688127290/', '_main')}>Priyadarshi Satyakam</span>, <span onClick={() => window.open('https://www.linkedin.com/in/kushagra-verma-a08a1828b/', '_main')}>Kushagra Verma</span> and <span onClick={() => window.open('https://www.linkedin.com/in/yash-joshi-069263168/', '_main')}> Yash Joshi</span></div> */}
         <div className="masthead">Copyright © Hack-a-Sol - All Rights Reserved.</div>
         </div>
     </div>
