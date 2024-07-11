@@ -12,7 +12,10 @@ export default function Tracks() {
                 <h2>TRACKS</h2>
             </div>
             <div className="tracks_events" data-aos="zoom-in" data-aos-delay="200">
-                <div className="tracks_box"></div>
+                <div className="track">
+                <div className="tracks_box" id="track1"></div>
+                <h2>WEB3</h2>
+                </div>
                 <div className="tracks_box"></div>
                 <div className="tracks_box"></div>
                 <div className="tracks_box"></div>

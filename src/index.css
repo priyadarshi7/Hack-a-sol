@@ -4,6 +4,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/*Fonts*/
+@font-face {
+  font-family: cyber;
+  src: url('./assets/Fonts/cyberstar.ttf');
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -14,7 +20,6 @@ body{
 
 .container p{
   color: white;
-  font-family: cyberstar;
   transform: rotate(-90deg);
 }
 
@@ -815,6 +820,14 @@ text-decoration: underline;
   animation: hover 2s infinite alternate;
 }
 
+#track1{
+  background-image: url('./assets/Tracks/Web3.png');
+}
+
+.track{
+  text-align: center;
+}
+
 .tracks_foot{
   margin: auto;
   font-size: 3vh;
@@ -1226,6 +1239,7 @@ text-align: left;
   .contact-foot{
     margin-bottom: 2vh;
   }
+
   .image_wrapper {
     margin: 0px 0px;
     width:300px;
@@ -1257,6 +1271,7 @@ text-align: left;
   .contact-heading h2{
     font-size: 5vh;
   }
+  /*Tracks*/
   .tracks_heading{
     height:10vh;
   }
