@@ -1,0 +1,38 @@
+import React from "react";
+import "./Community.css";
+import IIITV from "../assets/images/IIIT_V_Logo.png";
+import IIITians from "../assets/images/IIITians_Network_Logo.png";
+import IITIndore from "../assets/images/IIT_Indore_Logo.png";
+import IITMadras from "../assets/images/IIT_Madras_Logo.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init({once: true}); 
+
+export default function Community() {
+    return (
+        <div className="com-cont">
+            <div className="com-head" data-aos="zoom-in">
+                <h3>WE ARE GLAD TO ANNOUNCE OUR</h3>
+                <h2>COMMUNITY PARTNERS</h2>
+            </div>
+            <div className="com-body" data-aos="zoom-in" data-aos-delay="300">
+                <div className="com-partner">
+                    <img src={IIITV}></img>
+                    <h2>IIIT VADODARA</h2>
+                </div>
+                <div className="com-partner">
+                    <img src={IIITians}></img>
+                    <h2>IIITIANS NETWORK</h2>
+                </div>
+                <div className="com-partner">
+                    <img src={IITIndore}></img>
+                    <h2>IIT INDORE</h2>
+                </div>
+                <div className="com-partner">
+                    <img src={IITMadras}></img>
+                    <h2>IIT MADRAS</h2>
+                </div>
+            </div>
+        </div>
+    );
+}
