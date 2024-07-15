@@ -16,7 +16,11 @@ export default function Tracks() {
                 <div className="tracks_box" id="track1"></div>
                 <h2>WEB3</h2>
                 </div>
-                <div className="tracks_box"></div>
+                <div className="track">
+                <div className="tracks_box" id="track2">
+                    <h2>CYBER SECURITY</h2>
+                </div>
+                </div>
                 <div className="tracks_box"></div>
                 <div className="tracks_box"></div>
                 <div className="tracks_box"></div>

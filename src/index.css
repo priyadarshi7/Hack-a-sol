@@ -824,6 +824,14 @@ text-decoration: underline;
   background-image: url('./assets/Tracks/Web3.png');
 }
 
+#track2 {
+  background-image: url('./assets/images/cyber.png');
+}
+
+#track2 h2 {
+  position: relative;
+  top: 9rem;
+}
 .track{
   text-align: center;
 }
@@ -1334,8 +1342,16 @@ text-align: left;
 .sponsor-heading{
   height:9vh;
 }
-
-
+#track2 h2 {
+  text-wrap: nowrap;
+  font-size: 1rem;
+}
+#track2 {
+  margin-bottom: 0.8rem;
+}
+.tracks_box > h2 {
+  font-size: 1rem !important;
+}
 .main-about-us{
 
   display: flex;
