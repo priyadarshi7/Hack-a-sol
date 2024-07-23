@@ -1,5 +1,4 @@
 .com-cont {
-    height: 100svh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -33,6 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
 }
 .com-partner h2 {
     color: white;

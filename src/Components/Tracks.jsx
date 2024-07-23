@@ -17,13 +17,17 @@ export default function Tracks() {
                 <h2>WEB3</h2>
                 </div>
                 <div className="track">
-                <div className="tracks_box" id="track2">
-                    <h2>CYBER SECURITY</h2>
+                <div className="tracks_box" id="track2"></div>
+                <h2>CYBER SECURITY</h2>
                 </div>
+                <div className="track">
+                <div className="tracks_box" id="track3"></div>
+                <h2>AI/ML</h2>
                 </div>
-                <div className="tracks_box"></div>
-                <div className="tracks_box"></div>
-                <div className="tracks_box"></div>
+                <div className="track">
+                <div className="tracks_box" id="track4"></div>
+                <h2>Open</h2>
+                </div>
             </div>
             <div className="tracks_foot" data-aos="zoom-in" data-aos-delay="250">
                 <h2>TO BE REVEALED SOON</h2>
