@@ -1,16 +1,18 @@
 import React from "react"
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 export default function ColorsTimeline() {
   return (
-    <div className="timeline">
+    <div className="timeline" data-aos="zoom-in-down" data-aos-duration="500">
         <div className="timeline-heading">
             <h2>TIMELINE</h2>
         </div>
         <div className="timeline-main">
-        <VerticalTimeline>
+        <VerticalTimeline animate={false}>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'black', color: 'white'}}
