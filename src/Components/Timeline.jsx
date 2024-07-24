@@ -7,11 +7,11 @@ import 'aos/dist/aos.css';
 
 export default function ColorsTimeline() {
   return (
-    <div className="timeline" data-aos="zoom-in-down" data-aos-duration="500">
-        <div className="timeline-heading">
+    <div className="timeline" id="Timeline">
+        <div className="timeline-heading" data-aos="zoom-in-down" data-aos-duration="500">
             <h2>TIMELINE</h2>
         </div>
-        <div className="timeline-main">
+        <div className="timeline-main" data-aos="zoom-in-down" data-aos-duration="500">
         <VerticalTimeline animate={false}>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"

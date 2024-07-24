@@ -34,7 +34,7 @@ export default function Navbar(){
    
 
  
-    const listitems=["Home", "About Us", "Tracks", "Past Sponsors", "Contact Us"];
+    const listitems=["Home", "About Us","Timeline" , "Tracks", "Past Sponsors", "Contact Us"];
     const liststyle={
         cursor:"pointer",
     }
@@ -59,6 +59,7 @@ export default function Navbar(){
             <ul className="navbar-list">
                 <li onClick={() => window.location='#Home'}><div className="nav-element nav-home">Home</div></li>
                 <li onClick={() => window.location='#About Us'}><div className="nav-element nav-about">About Us</div></li>
+                <li onClick={() => window.location='#Timeline'}><div className="nav-element nav-about">Timeline</div></li>
                 <li onClick={() => window.location='#Tracks'}><div className="nav-element nav-tracks">Tracks</div></li>
                 <li onClick={() => window.location='#Past Sponsors'}><div className="nav-element nav-sponsors">Past Sponsors</div></li>
                 <li onClick={() => window.location='#Contact Us'}><div className="nav-element nav-contact">Contact Us</div></li>
@@ -67,7 +68,7 @@ export default function Navbar(){
             <IconButton onClick={toggleham}><MenuIcon color="info" sx={{fontSize:"50px" , color:"white"}}/></IconButton>
             </div>
             
-            <Drawer open={showham} anchor="right" onClose={toggleham}  sx={{ backgroundColor:"hsba(340, 8%, 14%, 1)"}}   PaperProps={{sx: { backgroundColor: 'rgba(0, 0, 0, .1)',
+            <Drawer open={showham} anchor="right" onClose={toggleham}  sx={{ backgroundColor:"hsba(340, 8%, 14%, 1)"}}   PaperProps={{sx: { backgroundColor: 'rgba(0, 0, 0, 0.6)',
              color:'white', width:'50%', border:'1px solid rgb(255, 95, 31)', borderRight:'0px',borderTop:'0px'}}}>
                 {list_items}
             </Drawer>
