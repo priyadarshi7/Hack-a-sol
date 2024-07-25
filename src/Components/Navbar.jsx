@@ -34,7 +34,7 @@ export default function Navbar(){
    
 
  
-    const listitems=["Home", "About Us", "Tracks", "Past Sponsors", "Contact Us"];
+    const listitems=["Home", "About Us","Timeline", "Tracks", "Past Sponsors", "Contact Us"];
     const liststyle={
         cursor:"pointer",
     }
@@ -59,6 +59,7 @@ export default function Navbar(){
             <ul className="navbar-list">
                 <li onClick={() => window.location='#Home'}><div className="nav-element nav-home">Home</div></li>
                 <li onClick={() => window.location='#About Us'}><div className="nav-element nav-about">About Us</div></li>
+                 <li onClick={() => window.location='#Timeline'}><div className="nav-element nav-tracks">Timeline</div></li>
                 <li onClick={() => window.location='#Tracks'}><div className="nav-element nav-tracks">Tracks</div></li>
                 <li onClick={() => window.location='#Past Sponsors'}><div className="nav-element nav-sponsors">Past Sponsors</div></li>
                 <li onClick={() => window.location='#Contact Us'}><div className="nav-element nav-contact">Contact Us</div></li>
