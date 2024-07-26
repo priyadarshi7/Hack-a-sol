@@ -1,9 +1,10 @@
 import React from "react";
 import "./Community.css";
-import IIITV from "../assets/images/IIIT_V_Logo.png";
-import IIITians from "../assets/images/IIITians_Network_Logo.png";
-import IITIndore from "../assets/images/IIT_Indore_Logo.png";
-import IITMadras from "../assets/images/IIT_Madras_Logo.png";
+import IIITV from "../assets/Community_Partners/IIIT_V_Logo.png";
+import IIITians from "../assets/Community_Partners/IIITians_Network_Logo.png";
+import IITIndore from "../assets/Community_Partners/IIT_Indore_Logo.png";
+import IITMadras from "../assets/Community_Partners/IIT_Madras_Logo.png";
+import IITBHU from "../assets/Community_Partners/IIT_BHU_Logo.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init({once: true}); 
@@ -31,6 +32,10 @@ export default function Community() {
                 <div className="com-partner">
                     <img src={IITMadras}></img>
                     <h2>IIT MADRAS</h2>
+                </div>
+                <div className="com-partner">
+                    <img src={IITBHU}></img>
+                    <h2>IIT BHU</h2>
                 </div>
             </div>
         </div>

@@ -13,8 +13,8 @@ export default function MainText(props){
                 <h2 data-aos="zoom-in" data-aos-duration="500">13th-15th September</h2>
                 <h2 data-aos-duration="500" data-aos="zoom-in">Annual Pan-India <span className="txt">Hackathon</span><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by IIIT-Naya Raipur</h2>
                 <div className="buttons">
-                    <div className="button1" onClick={props.modalAppear}><div className="img_registration"></div><div>PRE-REGISTER NOW</div></div>
-                    <div className="button2" onClick={() => window.open('https://discord.gg/H24uuScGG9', '_main')}><div className="img-discord"></div><div>JOIN OUR DISCORD</div></div></div><div>
+                    <div className="button1" onClick={() => window.open('https://app.foundance.org/events/hack-a-sol', '_main')}><div className="img_registration"></div><div>REGISTER NOW</div></div>
+                    <div className="button2" ><div className="img-discord"></div><div>JOIN OUR DISCORD</div></div></div><div>
                 </div>
             </div>
         </div>
