@@ -886,7 +886,6 @@ text-decoration: underline;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 2vh;
 }
 
 .text-content h1 {  
@@ -1394,7 +1393,7 @@ text-align: left;
   }
 
   .buttons{
-    flex-direction: column;
+    flex-direction:column-reverse;
   }
 .sponsor-heading h2{
   font-size: 4.2vh;

@@ -2,8 +2,11 @@ import React from "react"
 import comingSoon from "../assets/coming-soon-ezgif.com-crop.gif"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import './MainText.css';
 
 export default function MainText(props){
+
+    const [buttons,setButtons] = React.useState(false);
 
     return (
         <div className="container">
@@ -13,8 +16,12 @@ export default function MainText(props){
                 <h2 data-aos="zoom-in" data-aos-duration="500">13th-15th September</h2>
                 <h2 data-aos-duration="500" data-aos="zoom-in">Annual Pan-India <span className="txt">Hackathon</span><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by IIIT-Naya Raipur</h2>
                 <div className="buttons">
-                    <div className="button1" onClick={() => window.open('https://app.foundance.org/events/hack-a-sol', '_main')}><div className="img_registration"></div><div>REGISTER NOW</div></div>
+                    <div className="button1" onClick={()=>setButtons(prev=>!prev)}><div className="img_registration" style={{transition: "transform 0.5s ease-in-out", transform:buttons===true?"rotate(90deg)":"none"}}></div><div>REGISTER NOW</div></div>
                     <div className="button2" ><div className="img-discord"></div><div>JOIN OUR DISCORD</div></div></div><div>
+                </div>
+                <div className="register">
+                    <div className="register-button" style={{display:buttons===true?"flex":"none"}} onClick={()=>window.open('https://unstop.com/o/tcwkzKR?lb=H0Gvk984&utm_medium=Share&utm_source=shortUrl','_main')}>HACK-A-SOL 3.0</div>
+                    <div className="register-button"  style={{display:buttons===true?"flex":"none"}} onClick={()=>window.open('https://unstop.com/o/15vr29Y?lb=H0Gvk984&utm_medium=Share&utm_source=shortUrl','_main')}>CODE CONQUERORS</div>
                 </div>
             </div>
         </div>

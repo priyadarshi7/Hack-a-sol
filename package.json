@@ -21,6 +21,7 @@
     "clsx": "^2.1.1",
     "express": "^4.19.2",
     "framer-motion": "^11.2.10",
+    "hamburger-react": "^2.5.1",
     "mongoose": "^8.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

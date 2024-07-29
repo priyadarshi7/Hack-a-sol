@@ -1,78 +1,143 @@
-import React from "react"
-import hack_a_sol_logo from "../assets/images/final hackasol logo.png"
-import {useState} from 'react'
-
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import  IconButton  from "@mui/material/IconButton";
-import List from '@mui/material/List';
-import MenuIcon from '@mui/icons-material/Menu';
+import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-// import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { PlaylistAdd } from "@mui/icons-material";
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Logo from "../assets/images/final hackasol logo.png";
+import Hamburger from 'hamburger-react';
+import './Navbar.css'
 
+const navItems = ['About Us', 'Timeline', 'Tracks', 'Sponsors', 'Contact Us'];
 
+function DrawerAppBar(props) {
+  const { window } = props;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
-export default function Navbar(){
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
+  };
 
-
-    const [showham , setShowham] = useState(false);
+  const [isOpen, setOpen] = React.useState(false)
   
-    // const [switch_mus , setSwitch] = useState(true);
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      <div className="ham-head" style={{ display: "flex" }}>
+        <Typography variant="h6" sx={{ my: 2, marginLeft: "auto", marginRight:"auto", fontFamily:"Cinzel", }}>
+          Hack-a-Sol
+        </Typography>
+      </div>
+      <Divider />
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} href={`#${item}`} onClick={()=>setOpen(prev=>!prev)}>
+              <ListItemText primary={item} disableTypography={true}  sx={{fontFamily:"Cinzel" }}/>
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
 
+  const container = window !== undefined ? () => window().document.body : undefined;
 
-    function toggleham(){
-        setShowham((prevstate)=>{
-            return !prevstate
-        })
-    }
-
-   
-
+  const [backgroundColor, setBackgroundColor] = React.useState("transparent");
  
-    const listitems=["Home", "About Us","Timeline" , "Tracks", "Past Sponsors", "Contact Us"];
-    const liststyle={
-        cursor:"pointer",
-    }
+  const handleScroll = (event) => {
+      const { scrollTop, scrollHeight, clientHeight } = event.target;
+      const scrollRatio = scrollTop / (scrollHeight - clientHeight);
 
-    const list_items = (
-        <Box sx={{width:150}}>
-            <List>
-                {listitems.map((item,key)=>{
-                    return <ListItem key={key}>
-                        <ListItemText onClick={() => {window.location=`#${item}`; toggleham()}} style={liststyle} >{item}</ListItemText>
-                    </ListItem>
-                })}
-            </List>
-        </Box>
-    )
-    return (
-        <>
-        <div className="navbar">
-         {/* <a href="https://sac.iiitnr.ac.in/" className="logo"> */}
-         <img src={hack_a_sol_logo} alt=""/>
-         {/* </a>   */}
-            <ul className="navbar-list">
-                <li onClick={() => window.location='#Home'}><div className="nav-element nav-home">Home</div></li>
-                <li onClick={() => window.location='#About Us'}><div className="nav-element nav-about">About Us</div></li>
-                <li onClick={() => window.location='#Timeline'}><div className="nav-element nav-about">Timeline</div></li>
-                <li onClick={() => window.location='#Tracks'}><div className="nav-element nav-tracks">Tracks</div></li>
-                <li onClick={() => window.location='#Past Sponsors'}><div className="nav-element nav-sponsors">Past Sponsors</div></li>
-                <li onClick={() => window.location='#Contact Us'}><div className="nav-element nav-contact">Contact Us</div></li>
-            </ul>
-            <div id="ham-button">
-            <IconButton onClick={toggleham}><MenuIcon color="info" sx={{fontSize:"50px" , color:"white"}}/></IconButton>
+      if (scrollRatio > 0.5) {
+          setBackgroundColor("gray");
+      } else {
+          setBackgroundColor("transparent");
+      }
+  };
+
+  return (
+    <div className="nav">
+      <Box sx={{ display: 'flex' }}>
+        <CssBaseline />
+        <AppBar component="nav" sx={{
+          height: "8vh",
+          background: "transparent",
+          display: "flex",
+          justifyContent: "center",
+          boxShadow: "0",
+          zIndex: "1201",
+        }}>
+          <Toolbar>
+            <div className="ham">
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2, display: { sm: 'none' }, zIndex: "1201" }}
+              >
+                <Hamburger toggled={isOpen} toggle={setOpen}
+                  aria-label="open drawer"
+                  edge="start"
+                  onClick={handleDrawerToggle}
+                  className="hamburger-icon" 
+                  sx={{zIndex:"1201"}}
+                />
+              </IconButton>
             </div>
-            
-            <Drawer open={showham} anchor="right" onClose={toggleham}  sx={{ backgroundColor:"hsba(340, 8%, 14%, 1)"}}   PaperProps={{sx: { backgroundColor: 'rgba(0, 0, 0, 0.6)',
-             color:'white', width:'50%', border:'1px solid rgb(255, 95, 31)', borderRight:'0px',borderTop:'0px'}}}>
-                {list_items}
-            </Drawer>
-        </div>
-        </>
-    )
+            <div className="nav-logo">
+              <img src={Logo} alt="" />
+            </div>
+            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+              {navItems.map((item) => (
+                <Button key={item} sx={{ color: '#fff', fontFamily:"Montserrat", background: backgroundColor, fontWeight:"400",  alignItems:"center",justifyContent:"center" }} href={`#${item}`}  onScroll={handleScroll} className='nav-item'>
+                  {item}
+                </Button>
+              ))}
+            </Box>
+          </Toolbar>
+        </AppBar>
+        <nav>
+          <Drawer
+            container={container}
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            anchor="right"
+            ModalProps={{
+              keepMounted: false, 
+            }}
+            sx={{
+              display: { xs: 'block', sm: 'none' },
+              '& .MuiDrawer-paper': {
+                boxSizing: 'border-box',
+                width: "100%",
+                background: "rgba(0, 0, 0, 0.85)",
+                boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                backdropFilter: "blur(5px)",
+                webkitBackdropFilter: "blur(5px)",
+                border: "1px solid rgba(0, 0, 0, 0.3)",
+                color: "white",
+               zIndex:"1",
+               border:"1.4px solid orange"
+              }
+            }}
+          >
+            {drawer}
+          </Drawer>
+        </nav>
+      </Box>
+    </div>
+  );
 }
+
+export default DrawerAppBar;
