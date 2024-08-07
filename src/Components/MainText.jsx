@@ -3,6 +3,7 @@ import comingSoon from "../assets/coming-soon-ezgif.com-crop.gif"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import './MainText.css';
+import GFG from "../assets/images/GFG logo.png"
 
 export default function MainText(props){
 
@@ -20,8 +21,8 @@ export default function MainText(props){
                     <div className="button2" ><div className="img-discord"></div><div>JOIN OUR DISCORD</div></div></div><div>
                 </div>
                 <div className="register">
-                    <div className="register-button" style={{display:buttons===true?"flex":"none"}} onClick={()=>window.open('https://unstop.com/o/tcwkzKR?lb=H0Gvk984&utm_medium=Share&utm_source=shortUrl','_main')}>HACK-A-SOL 3.0</div>
-                    <div className="register-button"  style={{display:buttons===true?"flex":"none"}} onClick={()=>window.open('https://unstop.com/o/15vr29Y?lb=H0Gvk984&utm_medium=Share&utm_source=shortUrl','_main')}>CODE CONQUERORS</div>
+                    <div className="register-button" id="unstop" style={{display:buttons===true?"flex":"none"}} onClick={()=>window.open('https://unstop.com/o/tcwkzKR?lb=H0Gvk984&utm_medium=Share&utm_source=shortUrl','_main')}>HACK-A-SOL 3.0</div>
+                    <div className="register-button"  id="GFG" style={{display:buttons===true?"flex":"none"}} onClick={()=>window.open('https://www.geeksforgeeks.org/hackathon/code-conquerors','_main')}>CODE CONQUERORS</div> 
                 </div>
             </div>
         </div>

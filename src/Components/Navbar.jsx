@@ -121,11 +121,10 @@ function DrawerAppBar(props) {
               '& .MuiDrawer-paper': {
                 boxSizing: 'border-box',
                 width: "100%",
-                background: "rgba(0, 0, 0, 0.85)",
+                background: "rgba(0, 0, 0, 0.6)",
                 boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
                 backdropFilter: "blur(5px)",
                 webkitBackdropFilter: "blur(5px)",
-                border: "1px solid rgba(0, 0, 0, 0.3)",
                 color: "white",
                zIndex:"1",
                border:"1.4px solid orange"
