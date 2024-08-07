@@ -18,7 +18,7 @@ export default function MainText(props){
                 <h2 data-aos-duration="500" data-aos="zoom-in">Annual Pan-India <span className="txt">Hackathon</span><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by IIIT-Naya Raipur</h2>
                 <div className="buttons">
                     <div className="button1" onClick={()=>setButtons(prev=>!prev)}><div className="img_registration" style={{transition: "transform 0.5s ease-in-out", transform:buttons===true?"rotate(90deg)":"none"}}></div><div>REGISTER NOW</div></div>
-                    <div className="button2" ><div className="img-discord"></div><div>JOIN OUR DISCORD</div></div></div><div>
+                    <div className="button2" onClick={() => window.open("https://discord.gg/H24uuScGG9")}><div className="img-discord"></div><div>JOIN OUR DISCORD</div></div></div><div>
                 </div>
                 <div className="register">
                     <div className="register-button" id="unstop" style={{display:buttons===true?"flex":"none"}} onClick={()=>window.open('https://unstop.com/o/tcwkzKR?lb=H0Gvk984&utm_medium=Share&utm_source=shortUrl','_main')}>HACK-A-SOL 3.0</div>
