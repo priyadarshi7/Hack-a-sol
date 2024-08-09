@@ -46,6 +46,9 @@
 .com-body {
     display: flex;
     gap: 7rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1236px) {
