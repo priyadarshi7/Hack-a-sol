@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    overflow: hidden;
 }
 .com-head {
     margin-top: 4rem;
@@ -100,7 +101,7 @@
         font-size: 1rem;
     }
     .com-partner img {
-        height: 6rem;
+        height: 3rem;
     }
     .com-partner h2 {
         font-size: 1.3rem;
@@ -119,7 +120,7 @@
     }
 
     .com-partner img {
-        height: 6rem;
+        height: 3rem;
     }
 
     .com-partner h2 {
