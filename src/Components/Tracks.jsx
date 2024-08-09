@@ -29,9 +29,9 @@ export default function Tracks() {
                 <h2>Open</h2>
                 </div>
             </div>
-            <div className="tracks_foot" data-aos="zoom-in" data-aos-delay="250">
+            {/* <div className="tracks_foot" data-aos="zoom-in" data-aos-delay="250">
                 <h2>TO BE REVEALED SOON</h2>
-            </div>
+            </div> */}
         </div>
     )
 }
