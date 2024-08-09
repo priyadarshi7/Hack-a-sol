@@ -1,0 +1,128 @@
+.com-cont {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.com-head {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.com-head h2 {
+    background: linear-gradient(91.98deg, #FF6445 59.07%, #FFA400 97.21%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  font-size: 70px;
+  font-weight: 900;
+}
+.com-head h3 {
+    color: rgba(255, 161, 0, 1);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.com-partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.com-partner h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.com-partner img {
+    height: 5rem;
+    margin-bottom: 2rem;
+}
+.com-body {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1236px) {
+    .com-body {
+        gap: 3rem;
+    }
+}
+@media (max-width: 1145px) {
+    .com-body {
+        flex-direction: column;
+    }
+    .com-head {
+        margin-bottom: 6rem;
+    }
+    .com-cont {
+        height: auto;
+    }
+    .com-head h2 {
+        font-size: 60px;
+    }
+    .com-head h3 {
+        font-size: 1.5rem;
+    }
+    .com-partner {
+        margin-bottom: 2vh;
+    }
+}
+
+@media (max-width: 980px) {
+    .com-head h2 {
+        font-size: 45px;
+    }
+    .com-head {
+        margin-bottom: 5rem;
+    }
+    .com-head h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .com-head h2 {
+        font-size: 30px;
+    }
+
+    .com-head {
+        margin-bottom: 4rem;
+    }
+    .com-head h3 {
+        font-size: 1rem;
+    }
+    .com-partner img {
+        height: 6rem;
+    }
+    .com-partner h2 {
+        font-size: 1.3rem;
+    }
+    
+}
+@media (max-width: 391px) {
+    .com-head h2 {
+        font-size: 20px;
+    }
+    .com-head {
+        margin-bottom: 2rem;
+    }
+    .com-head h3 {
+        font-size: 0.7rem;
+    }
+
+    .com-partner img {
+        height: 6rem;
+    }
+
+    .com-partner h2 {
+        font-size: 1.1rem;
+    }
+}

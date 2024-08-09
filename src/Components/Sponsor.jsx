@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 AOS.init({once: true}); 
 export default function Sponsor(){
     return(
-        <div className="sponsor-container" id="Sponsors">
+        <div className="sponsor-container" id="PastSponsor">
             <div className="sponsor-heading" data-aos="fade-down" data-aos-duration="500">
                 <h2>PAST SPONSORS</h2>
             </div>
