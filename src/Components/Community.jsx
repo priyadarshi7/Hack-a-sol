@@ -5,9 +5,13 @@ import IIITians from "../assets/Community_Partners/IIITians_Network_Logo.png";
 import IITIndore from "../assets/Community_Partners/IIT_Indore_Logo.png";
 import IITMadras from "../assets/Community_Partners/IIT_Madras_Logo.png";
 import IITBHU from "../assets/Community_Partners/IIT_BHU_Logo.png";
-import IITMandi from "../assets/Community_Partners/IIT_Mandi.png"
+import IITMandi from "../assets/Community_Partners/IIT_Mandi.png";
+import eDAM from "../assets/Community_Partners/e-DAM-logo.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import devCode from "../assets/Community_Partners/devCode.png";
+import osDev from "../assets/Community_Partners/osDev.jpg";
+import codeCats from "../assets/Community_Partners/codeCats.png"
 AOS.init({once: true}); 
 
 export default function Community() {
@@ -41,6 +45,22 @@ export default function Community() {
                 <div className="com-partner">
                     <img src={IITMandi}></img>
                     <h2>IIT MANDI</h2>
+                </div>
+                <div className="com-partner">
+                    <img src={eDAM}></img>
+                    <h2>e-DAM</h2>
+                </div>
+                <div className="com-partner">
+                    <img src={devCode}></img>
+                    <h2>Dev Community</h2>
+                </div>
+                <div className="com-partner">
+                    <img src={osDev}></img>
+                    <h2>OS Community</h2>
+                </div>
+                <div className="com-partner">
+                    <img src={codeCats}></img>
+                    <h2>NIT Kurukshetra</h2>
                 </div>
             </div>
         </div>
