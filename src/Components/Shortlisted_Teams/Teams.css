@@ -59,6 +59,9 @@
     margin: auto;
 }
 
+.teams-shortlisted button:hover {
+    cursor: pointer;
+}
 
 @media (max-width: 1145px) {
     .com-body {
