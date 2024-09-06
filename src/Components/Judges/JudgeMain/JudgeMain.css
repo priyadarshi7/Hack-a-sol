@@ -1,0 +1,21 @@
+.team-main{
+    overflow: hidden;
+    width:100%;
+    background-color: black;
+}
+
+.team-main .team{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin: auto;
+    gap:3vh;
+    margin-top: 5vh;
+}
+
+.back{
+    height:40px;
+    color: white;
+}

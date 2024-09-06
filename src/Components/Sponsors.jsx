@@ -11,7 +11,7 @@ AOS.init({once: true});
 export default function Sponsors() {
     return (
         <div className="com-cont" id="Sponsors">
-            <div className="com-head" data-aos="zoom-in">
+            <div className="com-heads" data-aos="zoom-in">
                 <h3>WE ARE GLAD TO ANNOUNCE OUR</h3>
                 <h2>SPONSORS</h2>
             </div>

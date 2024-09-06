@@ -17,7 +17,7 @@ AOS.init({once: true});
 export default function Community() {
     return (
         <div className="com-cont">
-            <div className="com-head" data-aos="zoom-in">
+            <div className="comu-head" data-aos="zoom-in">
                 <h3>WE ARE GLAD TO ANNOUNCE OUR</h3>
                 <h2>COMMUNITY PARTNERS</h2>
             </div>
