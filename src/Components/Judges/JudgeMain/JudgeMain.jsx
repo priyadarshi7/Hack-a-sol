@@ -12,7 +12,7 @@ export default function JudgeMain(){
             <div className="team">
                 {
                     JudgeData.map((data,index)=>{
-                        return <JudgeCard name={data.name} designation={data.designation} linkedIn={data.linkedIn} image={data.img} key={index}/>
+                        return <JudgeCard name={data.name} designation={data.designation} linkedIn={data.linkedIn} image={data.img} key={index} Instagram={data.Instagram}/>
                     })
                 }
             </div>
