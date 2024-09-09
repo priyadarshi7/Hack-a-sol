@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 export default function JudgeCard(props){
     return(
         <div className="judge-member">
-             <Card sx={{ padding:"3vh", width:"345px" }}>
+             <Card sx={{ padding:"3vh", width:"300px", margin:"20px"}}>
                   <CardMedia
                     component="img"
                     height="250"
