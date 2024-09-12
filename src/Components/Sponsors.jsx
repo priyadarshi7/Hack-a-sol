@@ -4,6 +4,7 @@ import Nord_Pass from "../assets/images/Sponsors/NordPass-white-horizontal (1).p
 import Nord_VPN from "../assets/images/Sponsors/NordVPN horizontal.png";
 import Incogni from "../assets/images/Sponsors/incogni white (3).png";
 import QuillAudits from "../assets/images/Sponsors/QuillAudits.png";
+import GitHub from "../assets/images/Sponsors/github-mark-white.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init({once: true}); 
@@ -16,6 +17,10 @@ export default function Sponsors() {
                 <h2>SPONSORS</h2>
             </div>
             <div className="com-body" data-aos="zoom-in" data-aos-delay="300">
+            <div className="com-partner">
+                    <img src={GitHub}></img>
+                    <h2>GitHub</h2>
+                </div>
                 <div className="com-partner">
                     <img src={Nord_Pass}></img>
                     <h2>NordPass</h2>
